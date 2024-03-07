@@ -18,7 +18,7 @@ Available features:
 - Digital Envelope section
 - Background music Player
 
-## Depelopment
+## Development
 
 This project use [Remix](https://remix.run/docs). To run your Remix app locally, make sure your project's local dependencies are installed:
 
@@ -33,3 +33,16 @@ npm run dev
 ```
 
 Open up [http://localhost:3000](http://localhost:3000) and you should be ready to go!
+
+## TODO
+- integrate https://logrocket.com/
+- finalize intro image and gallery
+- confirm comment submission feature works
+
+- consider fonts that will match save the dates
+- move Reid & Brittany intro text above our heads
+- change Brittanys headshot
+- add a new section for "The Bridal Party"
+- Add Maid of Honor, Matron of Honor, and Best Man - should include photos of them and a short bio
+- add a header for "Bridesmaids" and "Groomsmen" and just list their names beneath
+- reduce margins / padding for sections across the board

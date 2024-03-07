@@ -5,8 +5,9 @@ import WelcomeModal from "~/components/WelcomeModal";
 import { indexAction, indexLoader } from "~/controls";
 import type { LoaderDataType } from "~/controls";
 import { useMediaQuery } from "react-responsive";
-import heroBg from "~/images/hero-bg.jpg";
-import heroBgMobile from "~/images/hero-bg-mobile.jpg";
+// import heroBg from "~/images/hero-bg.jpg";
+import heroBg from "~/images/DSC_1968.jpg";
+import heroBgMobile from "~/images/DSC_1968.jpg";
 import SectionWrapper from "~/components/Utils/SectionWrapper";
 import BrideAndGroom from "~/components/BrideAndGroom";
 import Countdown from "~/components/Countdown";
@@ -14,15 +15,16 @@ import Agendas from "~/components/Agendas";
 import LocationMap from "~/components/LocationMap";
 import Message from "~/components/Message";
 import { GoogleOAuthProvider } from "@react-oauth/google";
-import DigitalEnvelope from "~/components/DigitalEnvelope";
-import MusicPlayer from "~/components/MusicPlayer";
+// import DigitalEnvelope from "~/components/DigitalEnvelope";
+// import MusicPlayer from "~/components/MusicPlayer";
 import ogimage from "~/images/ogimage.jpg";
 import GalleryPhotos from "~/components/GalleryPhotos";
+import SpotifyPlaylist from "~/components/SpotifyPlayer";
 
 export const meta: V2_MetaFunction = () => {
   return [
     {
-      title: "Undangan Pernikahan - Ami & Fauzi",
+      title: "Wedding Invitation - Brittany & Reid",
     },
     {
       description:
@@ -92,55 +94,72 @@ export default function Index() {
       >
         <div className="mb-1">
           <h4
-            className="text-center font-head font-bold text-5xl mb-4 text-[#EFEFEF]"
-            style={{ textShadow: "3px 3px 1px #CE7BB0" }}
+            className="text-center font-head font-bold text-5xl mb-4 text-white"
+            style={{ textShadow: "5px 5px 2px #052E16" }}
           >
-            Ami & Fauzi
+            Brittany & Reid
           </h4>
           <div
-            className="text-center font-black font-sans text-md text-[#EFEFEF] italic border-t-2 border-[#CE7BB0] pt-3"
-            style={{ textShadow: "2px 2px 1px #CE7BB0" }}
+            className="text-center font-black font-sans text-lg text-[#EFEFEF] italic pt-3"
+            style={{ textShadow: "5px 5px 2px #052E16" }}
           >
-            30.07.2022
+            March 8, 2025
           </div>
         </div>
       </div>
 
-      <SectionWrapper className="bg-background">
+      <SectionWrapper className="bg-background mb-12">
         <BrideAndGroom />
       </SectionWrapper>
 
-      <SectionWrapper className="mb-36 pt-24">
-        <Countdown />
-      </SectionWrapper>
-
-      <SectionWrapper className="mb-36">
+      <SectionWrapper className="">
         <Agendas />
       </SectionWrapper>
 
-      <div className="mb-24">
+      <SectionWrapper className="mb-12 pt-12">
+        <Countdown />
+      </SectionWrapper>
+
+      <div className="mb-12">
         <LocationMap />
       </div>
 
-      <SectionWrapper className="mb-36">
+      <SectionWrapper className="mb-12">
         <GalleryPhotos />
       </SectionWrapper>
 
+      <SectionWrapper className="mb-12">
+        <SpotifyPlaylist/>
+      </SectionWrapper>
+
       <GoogleOAuthProvider clientId={ENV.GOOGLE_CLIENT_ID!}>
-        <SectionWrapper className="mb-36">
+        <SectionWrapper className="mb-12">
           <Message isMobile={isMobile} />
         </SectionWrapper>
       </GoogleOAuthProvider>
-
-      <SectionWrapper className="mb-36">
-        <DigitalEnvelope />
-      </SectionWrapper>
+    
 
       <div className="py-24 bg-background text-gray-700 relative text-center font-sans">
-        © {thisYear} by <span className="font-semibold">Fauzi</span>
+        © {thisYear} forked from 
+            <a 
+            className="font-semibold" 
+            href="https://github.com/fauzialz/amifauzi.com-open" 
+            target={"_blank"} 
+            rel="noreferrer"> Fauzi</a>
       </div>
 
-      <MusicPlayer play={!openWelcome} />
+      <SectionWrapper className="mb-12">
+        <div className=" fixed bottom-0 right-0 mr-3 mb-8 md:mr-8 md:mb-8">
+            <a
+                href="https://www.zola.com/registry/brittanyandreid2025"
+                target={"_blank"}
+                className="px-8 py-4 transition-all text-lg font-semibold w-full rounded-lg bg-green-950 hover:bg-green-800 outline-contrast-3 text-white outline-4 disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
+                rel="noreferrer"
+                >
+                Registry
+            </a>
+        </div>
+      </SectionWrapper>
     </div>
   );
 }

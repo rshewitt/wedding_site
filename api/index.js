@@ -34,7 +34,7 @@ __export(assets_manifest_exports, {
 });
 var assets_manifest_default, init_assets_manifest = __esm({
   "server-assets-manifest:@remix-run/dev/assets-manifest"() {
-    assets_manifest_default = { version: "d9d0e520", entry: { module: "/build/entry.client-LSFG57EJ.js", imports: ["/build/_shared/chunk-DDCJTZZH.js", "/build/_shared/chunk-UZEIUW3T.js", "/build/_shared/chunk-VAHLHB76.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-W6UKITTJ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-YJ4TYJU5.js", imports: ["/build/_shared/chunk-2P6FRLSA.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, hmr: void 0, url: "/build/manifest-D9D0E520.js" };
+    assets_manifest_default = { version: "096d5aee", entry: { module: "/build/entry.client-LSFG57EJ.js", imports: ["/build/_shared/chunk-DDCJTZZH.js", "/build/_shared/chunk-UZEIUW3T.js", "/build/_shared/chunk-VAHLHB76.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-W6UKITTJ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-2DIWZM5X.js", imports: ["/build/_shared/chunk-2P6FRLSA.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, hmr: void 0, url: "/build/manifest-096D5AEE.js" };
   }
 });
 
@@ -645,27 +645,27 @@ var import_react3 = require("react"), import_jsx_dev_runtime7 = require("react/j
     /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "flex justify-center pb-20", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(NumberCard, { number: countdown.days, label: "Days" }, void 0, !1, {
         fileName: "app/components/Countdown.tsx",
-        lineNumber: 53,
+        lineNumber: 52,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(NumberCard, { number: countdown.hours, label: "Hours" }, void 0, !1, {
         fileName: "app/components/Countdown.tsx",
-        lineNumber: 54,
+        lineNumber: 53,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(NumberCard, { number: countdown.minutes, label: "Minutes" }, void 0, !1, {
         fileName: "app/components/Countdown.tsx",
-        lineNumber: 55,
+        lineNumber: 54,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(NumberCard, { number: countdown.seconds, label: "Seconds" }, void 0, !1, {
         fileName: "app/components/Countdown.tsx",
-        lineNumber: 56,
+        lineNumber: 55,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/components/Countdown.tsx",
-      lineNumber: 52,
+      lineNumber: 51,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
@@ -680,17 +680,17 @@ var NumberCard = (0, import_react3.memo)(({ number, label }) => {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "rounded-lg bg-[#EFEFEF] py-7 px-2 w-24 text-center mx-2 text-gray-700 font-sans", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "text-3xl mb-2", children: numberString }, void 0, !1, {
       fileName: "app/components/Countdown.tsx",
-      lineNumber: 74,
+      lineNumber: 73,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { children: label }, void 0, !1, {
       fileName: "app/components/Countdown.tsx",
-      lineNumber: 75,
+      lineNumber: 74,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/components/Countdown.tsx",
-    lineNumber: 73,
+    lineNumber: 72,
     columnNumber: 5
   }, this);
 });

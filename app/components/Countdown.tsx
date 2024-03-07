@@ -1,6 +1,6 @@
 import { memo, useEffect, useState } from "react";
 
-const EVENT_DATE = "Juliy 30, 2022 08:00:00";
+const EVENT_DATE = "March 8, 2025 15:00:00";
 const COUNTDOWN_DATE = new Date(EVENT_DATE).getTime();
 
 interface COUNTDOWNTYPE {
@@ -45,15 +45,14 @@ const Countdown = memo(() => {
   return (
     <div className="w-full px-1 md:px-4">
       <div className="text-3xl font-head font-bold text-center mb-10 pt-10 text-gray-700 px-2">
-        <h4 className="mb-1">Hitung Mundur</h4>
-        <h4>Menuju Pernikahan Kami</h4>
+        <h4 className="mb-1">See you there in...</h4>
       </div>
 
       <div className="flex justify-center pb-20">
-        <NumberCard number={countdown.days} label="Hari" />
-        <NumberCard number={countdown.hours} label="Jam" />
-        <NumberCard number={countdown.minutes} label="Menit" />
-        <NumberCard number={countdown.seconds} label="Detik" />
+        <NumberCard number={countdown.days} label="Days" />
+        <NumberCard number={countdown.hours} label="Hours" />
+        <NumberCard number={countdown.minutes} label="Minutes" />
+        <NumberCard number={countdown.seconds} label="Seconds" />
       </div>
     </div>
   );

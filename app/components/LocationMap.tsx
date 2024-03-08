@@ -13,7 +13,7 @@ const MAP_ADDRESS = "906 Mazant St, New Orleans, LA 70117";
 
 const LocationMap = () => {
   return (
-    <div className="py-10 bg-[#EFEFEF]">
+    <div className="py-10">
       <SectionWrapper>
         <div className="flex flex-col-reverse md:flex-row">
           <div className="w-full px-4 md:w-1/2">

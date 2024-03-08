@@ -69,7 +69,7 @@ const NumberCard = memo(({ number, label }: NumberCardProps) => {
   const numberString = number < 100 ? ("0" + number).slice(-2) : String(number);
 
   return (
-    <div className="rounded-lg bg-[#EFEFEF] py-7 px-2 w-24 text-center mx-2 text-gray-700 font-sans">
+    <div className="rounded-lg bg-white py-7 px-2 w-24 text-center mx-2 text-gray-700 font-sans">
       <div className="text-3xl mb-2">{numberString}</div>
       <div>{label}</div>
     </div>

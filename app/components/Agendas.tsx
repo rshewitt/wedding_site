@@ -20,6 +20,10 @@ const Agendas = () => {
         </a>
       </div>
       
+      <div className="text-3xl font-head font-bold text-center mb-10 pt-10 text-gray-700 px-2">
+        <h4 className="mb-1">Festivities</h4>
+      </div>
+
       <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 py-8 md:py-16 md:px-0 md:text-3xl font-black">
         <div className="col-span-1 text-gray-400 text-left md:text-center font-sans">
           Mardi Gras

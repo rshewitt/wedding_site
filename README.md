@@ -42,7 +42,4 @@ Open up [http://localhost:3000](http://localhost:3000) and you should be ready t
 - consider fonts that will match save the dates
 - move Reid & Brittany intro text above our heads
 - change Brittanys headshot
-- add a new section for "The Bridal Party"
-- Add Maid of Honor, Matron of Honor, and Best Man - should include photos of them and a short bio
-- add a header for "Bridesmaids" and "Groomsmen" and just list their names beneath
-- reduce margins / padding for sections across the board
+- fix padding for breakpoint ( desktop ) of brittany and reid intro 

@@ -9,7 +9,7 @@ const BridalParty = () => {
       <div className="text-3xl font-head font-bold text-center mb-10 pt-10 text-gray-700 px-2">
         <h4 className="mb-1">Bridal Party</h4>
       </div>
-      <div className="w-full flex flex-wrap justify-center pb-20">
+      <div className="w-full flex flex-wrap justify-center pb-10">
         <div className="w-full md:w-1/2 px-4">
           <div className="flex flex-col items-center py-14 sm:px-8 lg:p-20 text-center">
             <img

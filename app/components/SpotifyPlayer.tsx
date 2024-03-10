@@ -11,10 +11,10 @@ const SpotifyPlaylist = () => {
   
   return (
     <div>
-      <div className="text-3xl font-head font-bold text-center mb-4 md:mb-16 text-gray-700 px-4">
+      <div className="text-3xl font-head font-bold text-center mb-4 text-gray-700 px-4">
         What song reminds you of us?
         </div>
-        <div className="text-base font-head font-bold text-center mb-10 md:mb-16 text-gray-700 px-4">
+        <div className="text-base font-head font-bold text-center mb-10 text-gray-700 px-4">
         <a 
           // TODO: update this link
           href="https://open.spotify.com/playlist/1accWGTIiTGHdkpJhei0Ff?si=uHRxgcTkQC6ShCEox4ewOg&pt=12afd4560a6b1715fcf57ba7ab4780e9&pi=u-kTdBwbCRRl-s"

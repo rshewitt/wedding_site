@@ -1,5 +1,5 @@
 import TextWithLine from "./Utils/TextWithLine";
-import bride from "~/images/bride.jpg";
+import bride from "~/images/bride2.jpg";
 import groom from "~/images/groom.jpeg";
 
 const BrideAndGroom = () => {

@@ -24,7 +24,7 @@ const Agendas = () => {
         <h4 className="mb-1">Festivities</h4>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 py-8 md:py-16 md:px-0 md:text-3xl font-black">
+      <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 py-4 md:py-16 md:px-0 md:text-3xl font-black">
         <div className="col-span-1 text-gray-400 text-left md:text-center font-sans">
           Mardi Gras
         </div>
@@ -33,12 +33,30 @@ const Agendas = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 py-8 md:py-16 md:px-0 md:text-3xl font-black">
+      <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 py-4 md:py-16 md:px-0 md:text-3xl font-black">
+        <div className="col-span-1 text-gray-400 text-left md:text-center font-sans">
+          Rehearsal Dinner
+        </div>
+        <div className="col-span-1 text-gray-700 text-right md:text-center font-sans">
+          March 7
+        </div>
+      </div>
+
+      <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 py-4 md:py-16 md:px-0 md:text-3xl font-black">
         <div className="col-span-1 text-gray-400 text-left md:text-center font-sans">
           Ceremony & Reception
         </div>
         <div className="col-span-1 text-gray-700 text-right md:text-center font-sans">
           March 8
+        </div>
+      </div>
+      
+      <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 py-4 md:py-16 md:px-0 md:text-3xl font-black">
+        <div className="col-span-1 text-gray-400 text-left md:text-center font-sans">
+        Farewell Brunch
+        </div>
+        <div className="col-span-1 text-gray-700 text-right md:text-center font-sans">
+          March 9
         </div>
       </div>
       <div className="col-span-1 text-gray-400 text-lg md:text-center font-sans">

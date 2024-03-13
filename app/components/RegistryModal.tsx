@@ -115,7 +115,7 @@ const NewsletterModal: React.FC<NewsletterModalProps> = ({
       </div>
       <div className="text-center py-4">
         <a 
-            className="mb-3 px-2 py-2 text-white text-xl rounded-lg bg-green-950" 
+            className="mb-3 px-4 py-4 text-white text-xl rounded-lg bg-green-950" 
             href="https://www.zola.com/registry/brittanyandreid2025" 
             target="_blank" 
             rel="noreferrer">
@@ -145,7 +145,7 @@ const RegistryModal = () => {
 
   return (
     <>
-      <div className=" fixed bottom-0 right-0 mr-3 mb-3">
+      <div className="fixed bottom-0 right-0 mr-3 mb-3">
         <button 
             onClick={handleOpenNewsletterModal}
             className="px-4 py-4 transition-all text-lg font-semibold w-full rounded-lg bg-green-950 hover:bg-green-800 outline-contrast-3 text-white outline-4 disabled:opacity-50 disabled:pointer-events-none cursor-pointer"

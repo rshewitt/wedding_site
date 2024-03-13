@@ -24,7 +24,7 @@ const styles = {
     },
     bmMenuWrap: {
       position: 'fixed',
-      height: '50%',
+      height: '62%',
       width: '250px'
     },
     bmMenu: {
@@ -50,7 +50,7 @@ const styles = {
     }
   }
 
-const BurgerMenu = ( homeRef:any ) => {
+const BurgerMenu = () => {
   
   const [isOpen, setOpen] = useState(false)
 
@@ -66,58 +66,65 @@ const BurgerMenu = ( homeRef:any ) => {
     }
   }
 
+  const navItems = [ 
+    { 
+        "div_id": "home_page_div",
+        "name": "Home"
+    },
+    {
+       "div_id": "bride_and_groom_div", 
+       "name": "Bride & Groom"
+    },
+    {
+        "div_id": "agenda_div", 
+        "name": "Festivities"
+    },
+    {
+        "div_id": "bridal_party_div",
+        "name": "Bridal Party"
+    }, 
+    {
+        "div_id": "location_div", 
+        "name": "Wedding Location"
+    },
+    {
+        "div_id": "lodging_div",
+        "name": "Logging"
+    },
+    {
+        "div_id": "ttd_dev",
+        "name": "Things To Do"
+    },
+    {
+        "div_id": "carousel_div",
+        "name": "Gallery"
+    }, 
+    {
+        "div_id": "spotify_div",
+        "name": "Spotify Playlist"
+    }, 
+    {
+        "div_id": "rsvp_div", 
+        "name": "RSVP"
+    }
+  ]
+
   return (
     <div className="fixed top-0 left-0 mx-3 bg-green-950 rounded-lg" style={{ marginTop: "10px", zIndex: "5" }}>
       <Menu isOpen={isOpen}
         onOpen={handleIsOpen}
         onClose={handleIsOpen} 
         styles={styles}>
-        <button 
-            id="home_bm" 
-            className="menu-item font-semibold text-white mb-6" 
-            onClick={()=>{executeScroll("home_page_div")}}
-        >Home</button>
-        <br/>
-        <button 
-            onClick={()=>{executeScroll("bride_and_groom_div")}}
-            id="bride_groom_bm" 
-            className="menu-item font-semibold text-white mb-6"
-        >Bride & Groom</button>
-        <br/>
-        <button
-            onClick={()=>{executeScroll("agenda_div")}}
-            id="festivities_bm" className="menu-item font-semibold text-white mb-6" 
-        >Festivities</button>
-        <br/>
-        <button 
-            id="bridal_party_bm" 
-            onClick={()=>{executeScroll("bridal_party_div")}}
-            className="menu-item--small font-semibold text-white mb-6"
-        >Bridal Party</button>
-        <br/>
-        <button 
-            id="wedding_location_mb" 
-            onClick={()=>{executeScroll("location_div")}}
-            className="menu-item--small font-semibold text-white mb-6" 
-        >Wedding Location</button>
-        <br/>
-        <button 
-            id="gallery_bm" 
-            onClick={()=>{executeScroll("carousel_div")}}
-            className="menu-item--small font-semibold text-white mb-6" 
-        >Gallery</button>
-        <br/>
-        <button 
-            id="spotify_bm" 
-            onClick={()=>{executeScroll("spotify_div")}}
-            className="menu-item--small font-semibold text-white mb-6" 
-        >Spotify Playlist</button>
-        <br/>
-        <button
-            id="rsvp_bm" 
-            onClick={()=>{executeScroll("rsvp_iv")}}
-            className="menu-item--small font-semibold text-white" 
-        >RSVP</button>
+        {navItems.map(navItem => (
+            <>
+            <button 
+                className="menu-item--small font-semibold text-white mb-6" 
+                key={`bg_item_${navItem.div_id}`}
+                onClick={()=>{executeScroll(navItem.div_id)}}
+                >{navItem.name}</button>
+            <br/>
+            </>
+        ))}
       </Menu>
     </div>
     );

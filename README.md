@@ -37,9 +37,28 @@ Open up [http://localhost:3000](http://localhost:3000) and you should be ready t
 ## TODO
 - integrate https://logrocket.com/
 - finalize intro image and gallery
-- confirm comment submission feature works
+- backtrack comment submission to feed to google sheet NOT email
 
+- add simple auth in front of app accepting password
+- add lodging information below the location section
+- add a things-to-do in new orleans section below the lodging section
+- add hamburger menu on top-right. list of sections ( e.g. location, agenda, gallery, etc...) for quick navigation
 - consider fonts that will match save the dates
 - move Reid & Brittany intro text above our heads
 - change Brittanys headshot
 - fix padding for breakpoint ( desktop ) of brittany and reid intro 
+- make sure hamburger menu displays on top of carousel 
+- hamburger isn't displaying over address of venue
+- hamburger nav isn't displaying over "Wedding Venue" text
+    - many items aren't interactible
+- hamburger is displaying below the image carousel 
+- convert burger menu style into tailwind 
+- scroll via element reference not by pixel values from top 
+- create burger menu items off loop
+
+- remove all unnecessary code. slim the app down
+- update meta in head ( still has stuff from upstream dev ) 
+    - og.description, site_name, url, etc...
+
+- 1968 image don't crop. we need more vertical above us.
+

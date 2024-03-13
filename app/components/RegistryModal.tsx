@@ -14,7 +14,13 @@ const RegistryModal = () => {
         className="px-4 py-4 transition-all text-lg font-semibold w-full rounded-lg bg-green-950 hover:bg-green-800 outline-contrast-3 text-white outline-4 disabled:opacity-50 disabled:pointer-events-none cursor-pointer">
             Registry
         </button>
-      <Modal open={open} onClose={handleClick} blockScroll={false} center>
+      <Modal open={open} 
+        classNames={{
+            modal: 'rounded-lg'
+        }}
+        onClose={handleClick} 
+        blockScroll={false} 
+        center>
         <h4
             className="text-center font-head mb-6 font-bold text-2xl text-black"
             >

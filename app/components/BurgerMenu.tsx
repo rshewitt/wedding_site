@@ -10,7 +10,7 @@ const styles = {
       top: '15px'
     },
     bmBurgerBars: {
-      background: '#052E16'
+      background: '#052E16',
     },
     bmBurgerBarsHover: {
       background: '#a90000'
@@ -24,12 +24,12 @@ const styles = {
     },
     bmMenuWrap: {
       position: 'fixed',
-      height: '55%',
+      height: '50%',
       width: '250px'
     },
     bmMenu: {
       background: '#052E16',
-      padding: '2.5em 1.5em 0',
+      padding: '0.5em 1.5em 0',
       fontSize: '1.15em',
       borderRadius: '10px'
     },
@@ -44,11 +44,13 @@ const styles = {
       display: 'inline-block'
     },
     bmOverlay: {
-      background: 'rgba(0, 0, 0, 0.3)'
+      background: 'rgba(0, 0, 0, 0.3)',
+      top: '0', 
+      left: '0'
     }
   }
 
-const BurgerMenu = () => {
+const BurgerMenu = ( homeRef:any ) => {
   
   const [isOpen, setOpen] = useState(false)
 
@@ -56,13 +58,16 @@ const BurgerMenu = () => {
       setOpen(!isOpen)
   }
 
-  const closeSideBar = ( topPX: number) => {
-    window.scrollTo({ top: topPX, behavior: "smooth" })
-    setOpen(false)
+  const executeScroll = (divName:string) => {
+    const element = document.getElementById(divName);
+    if (element) {
+        element.scrollIntoView({behavior: "smooth"}) 
+        setOpen(false)
+    }
   }
 
   return (
-    <div className="fixed top-0 left-0 mx-3 bg-green-950 rounded-lg" style={{ marginTop: "10px" }}>
+    <div className="fixed top-0 left-0 mx-3 bg-green-950 rounded-lg" style={{ marginTop: "10px", zIndex: "5" }}>
       <Menu isOpen={isOpen}
         onOpen={handleIsOpen}
         onClose={handleIsOpen} 
@@ -70,47 +75,47 @@ const BurgerMenu = () => {
         <button 
             id="home_bm" 
             className="menu-item font-semibold text-white mb-6" 
-            onClick={ () => {closeSideBar(0)}}
+            onClick={()=>{executeScroll("home_page_div")}}
         >Home</button>
         <br/>
         <button 
-            onClick={ () => {closeSideBar(900)}}
+            onClick={()=>{executeScroll("bride_and_groom_div")}}
             id="bride_groom_bm" 
             className="menu-item font-semibold text-white mb-6"
         >Bride & Groom</button>
         <br/>
         <button
-            onClick={ () => {closeSideBar(2300)}}
+            onClick={()=>{executeScroll("agenda_div")}}
             id="festivities_bm" className="menu-item font-semibold text-white mb-6" 
         >Festivities</button>
         <br/>
         <button 
             id="bridal_party_bm" 
-            onClick={ () => {closeSideBar(3200)}}
+            onClick={()=>{executeScroll("bridal_party_div")}}
             className="menu-item--small font-semibold text-white mb-6"
         >Bridal Party</button>
         <br/>
         <button 
             id="wedding_location_mb" 
-            onClick={ () => {closeSideBar(5400)}}
+            onClick={()=>{executeScroll("location_div")}}
             className="menu-item--small font-semibold text-white mb-6" 
         >Wedding Location</button>
         <br/>
         <button 
             id="gallery_bm" 
-            onClick={ () => {closeSideBar(6400)}} 
+            onClick={()=>{executeScroll("carousel_div")}}
             className="menu-item--small font-semibold text-white mb-6" 
         >Gallery</button>
         <br/>
         <button 
             id="spotify_bm" 
-            onClick={ () => {closeSideBar(7000)}} 
+            onClick={()=>{executeScroll("spotify_div")}}
             className="menu-item--small font-semibold text-white mb-6" 
         >Spotify Playlist</button>
         <br/>
         <button
             id="rsvp_bm" 
-            onClick={ () => {closeSideBar(7700)}} 
+            onClick={()=>{executeScroll("rsvp_iv")}}
             className="menu-item--small font-semibold text-white" 
         >RSVP</button>
       </Menu>

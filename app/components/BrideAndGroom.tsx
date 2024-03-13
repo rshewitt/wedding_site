@@ -4,7 +4,7 @@ import groom from "~/images/groom.jpeg";
 
 const BrideAndGroom = () => {
   return (
-    <div className="pt-20 pb-4">
+    <div id="bride_and_groom_div" className="pt-10 pb-4">
       <div className="w-full flex flex-wrap pb-20">
         <div className="w-full md:w-1/2 px-4">
           <div className="flex flex-col items-center py-14 sm:px-8 lg:p-20 text-center">

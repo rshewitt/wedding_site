@@ -10,7 +10,7 @@ const scope = 'user-read-private user-read-email';
 const SpotifyPlaylist = () => {
   
   return (
-    <div>
+    <div id="spotify_div">
       <div className="text-3xl font-head font-bold text-center mb-4 text-gray-700 px-4">
         What song reminds you of us?
         </div>

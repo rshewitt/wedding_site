@@ -7,7 +7,7 @@ import photo4 from "~/images/DSC_2001.jpg";
 
 const GalleryCarousel = () => {
     return (
-        <div className="w-full px-1 md:px-4">
+        <div id="carousel_div" className="w-full px-1 md:px-4">
             <h4 className="text-3xl font-head font-bold text-center mb-14 pt-10 text-gray-700">
                 Gallery
             </h4>

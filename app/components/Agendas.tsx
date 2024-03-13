@@ -2,7 +2,7 @@ const CALENDAR_URL = "https://calendar.google.com/calendar/event?action=TEMPLATE
 
 const Agendas = () => {
   return (
-    <div className="max-w-3xl mx-auto text-center">
+    <div id="agenda_div" className="max-w-3xl mx-auto text-center">
       <div className="mb-4 text-gray-500 font-head md:text-lg font-medium">
       Our wedding will be held on:
       </div>

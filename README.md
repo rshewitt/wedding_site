@@ -38,17 +38,14 @@ Open up [http://localhost:3000](http://localhost:3000) and you should be ready t
 - integrate https://logrocket.com/
 - finalize intro image and gallery
 - backtrack comment submission to feed to google sheet NOT email
+- apply linter ( include format on save )
 
 - add simple auth in front of app accepting password
-- add lodging information below the location section
-- add a things-to-do in new orleans section below the lodging section
 - consider fonts that will match save the dates
 - move Reid & Brittany intro text above our heads
 - change Brittanys headshot
 - fix padding for breakpoint ( desktop ) of brittany and reid intro 
 - convert burger menu style into tailwind 
-- allow registry dialog/modal to be closed by clicking on background
-- create burger menu items off loop
 - verify things work on desktop
 - remove all unnecessary code. slim the app down
 - 1968 image don't crop. we need more vertical above us.

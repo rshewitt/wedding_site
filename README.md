@@ -35,18 +35,20 @@ npm run dev
 Open up [http://localhost:3000](http://localhost:3000) and you should be ready to go!
 
 ## TODO
-- integrate https://logrocket.com/
-- finalize intro image and gallery
-- backtrack comment submission to feed to google sheet NOT email
-- apply linter ( include format on save )
-
-- add simple auth in front of app accepting password
-- consider fonts that will match save the dates
-- move Reid & Brittany intro text above our heads
-- change Brittanys headshot
-- fix padding for breakpoint ( desktop ) of brittany and reid intro 
-- convert burger menu style into tailwind 
-- verify things work on desktop
-- remove all unnecessary code. slim the app down
-- 1968 image don't crop. we need more vertical above us.
+- Deployment
+    - refresh on static web page deployment on aws ( s3, cloudfront, r53 ) 
+    - remove all unnecessary code. slim the app down
+- Features
+    - finish spreadsheet append functionality from form 
+    - add simple auth in front of app accepting password
+- UI/Style Improvements
+    - consider fonts that will match save the dates
+    - move Reid & Brittany intro text above our heads
+    - change Brittanys headshot
+    - fix padding for breakpoint ( desktop ) of brittany and reid intro 
+    - convert burger menu style into tailwind 
+    - 1968 image don't crop. we need more vertical above us.
+    - verify things work on desktop
+- Observations/Analysis
+    - integrate https://logrocket.com/
 

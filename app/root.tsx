@@ -11,6 +11,8 @@ import {
 import styles from "./tailwind.css";
 import reactPhotoViewStyles from "react-photo-view/dist/react-photo-view.css";
 
+require('dotenv').config()
+
 export const links: LinksFunction = () => [
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
   { rel: "stylesheet", href: styles },
@@ -35,7 +37,7 @@ export const links: LinksFunction = () => [
 
 export default function App() {
   return (
-    <html lang="id">
+    <html lang="en">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />

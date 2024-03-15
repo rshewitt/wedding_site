@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        "contrast": "#CE7BB0",
+        "contrast": "#023d0b",
         "contrast-2": "#A267AC",
         "contrast-3": "#6867AC",
         "background": "#EFEFEF",

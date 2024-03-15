@@ -2,54 +2,47 @@ import type { V2_MetaFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import { useEffect, useState } from "react";
 import WelcomeModal from "~/components/WelcomeModal";
-import { indexAction, indexLoader } from "~/controls";
+import { indexAction, indexLoader } from "~/controls"; 
 import type { LoaderDataType } from "~/controls";
 import { useMediaQuery } from "react-responsive";
-import heroBg from "~/images/hero-bg.jpg";
-import heroBgMobile from "~/images/hero-bg-mobile.jpg";
 import SectionWrapper from "~/components/Utils/SectionWrapper";
+import Home from "~/components/Home";
+import BurgerMenu from "~/components/BurgerMenu";
+import RegistryModal from "~/components/RegistryModal";
 import BrideAndGroom from "~/components/BrideAndGroom";
+import BridalParty from "~/components/BridalParty";
 import Countdown from "~/components/Countdown";
 import Agendas from "~/components/Agendas";
 import LocationMap from "~/components/LocationMap";
+import Lodging from "~/components/Lodging";
+import ThingsToDo from "~/components/ThingsToDo";
 import Message from "~/components/Message";
 import { GoogleOAuthProvider } from "@react-oauth/google";
-import DigitalEnvelope from "~/components/DigitalEnvelope";
-import MusicPlayer from "~/components/MusicPlayer";
-import ogimage from "~/images/ogimage.jpg";
-import GalleryPhotos from "~/components/GalleryPhotos";
+// import DigitalEnvelope from "~/components/DigitalEnvelope";
+// import MusicPlayer from "~/components/MusicPlayer";
+import GalleryCarousel from "~/components/GalleryCarousel";
+import SpotifyPlaylist from "~/components/SpotifyPlayer";
 
 export const meta: V2_MetaFunction = () => {
   return [
     {
-      title: "Undangan Pernikahan - Ami & Fauzi",
+      title: "Wedding Invitation - Brittany & Reid",
     },
     {
       description:
-        "Sabtu, 30 Juli 2022 di Taman Mini Perumnas Batu Galing, Bengkulu",
-    },
-    {
-      "og:image": ogimage,
+        "wedding",
     },
     {
       "og:image:type": "image/jpeg",
     },
     {
-      "og:site_name": "amifauzi",
+      "og:site_name": "br_wedding",
     },
-    { "og:url": "https://www.amifauzi.com/" },
-    { "og:title": "Undangan Pernikahan - Ami & Fauzi" },
+    { "og:title": "Wedding - Brittany & Reid" },
     {
-      "og:description": `Sabtu, 30 Juli 2022 di Taman Mini Perumnas Batu Galing, Bengkulu`,
+      "og:description": `wedding`,
     },
     { "og:type": "website" },
-
-    { "twitter:image": ogimage },
-    { "twitter:card": "summary_large_image" },
-    {
-      "twitter:description":
-        "Sabtu, 30 Juli 2022 di Taman Mini Perumnas Batu Galing, Bengkulu",
-    },
   ];
 };
 
@@ -85,62 +78,66 @@ export default function Index() {
       className="bg-background-2"
     >
       <WelcomeModal isOpen={openWelcome} onClose={onCloseWelcomeModal} />
+      
+      <Home/>
 
-      <div
-        className="flex justify-center items-center h-screen md:h-[750px] bg-no-repeat bg-center bg-cover"
-        style={{ backgroundImage: `url(${isMobile ? heroBgMobile : heroBg})` }}
-      >
-        <div className="mb-1">
-          <h4
-            className="text-center font-head font-bold text-5xl mb-4 text-[#EFEFEF]"
-            style={{ textShadow: "3px 3px 1px #CE7BB0" }}
-          >
-            Ami & Fauzi
-          </h4>
-          <div
-            className="text-center font-black font-sans text-md text-[#EFEFEF] italic border-t-2 border-[#CE7BB0] pt-3"
-            style={{ textShadow: "2px 2px 1px #CE7BB0" }}
-          >
-            30.07.2022
-          </div>
-        </div>
-      </div>
+      <BurgerMenu/>
 
-      <SectionWrapper className="bg-background">
+      <SectionWrapper className="bg-background mb-12">
         <BrideAndGroom />
       </SectionWrapper>
 
-      <SectionWrapper className="mb-36 pt-24">
-        <Countdown />
-      </SectionWrapper>
-
-      <SectionWrapper className="mb-36">
+      <SectionWrapper className="mb-12">
         <Agendas />
       </SectionWrapper>
 
-      <div className="mb-24">
-        <LocationMap />
-      </div>
+      <SectionWrapper className="bg-[#EFEFEF] mb-12">
+        <BridalParty />
+      </SectionWrapper>
 
-      <SectionWrapper className="mb-36">
-        <GalleryPhotos />
+      <SectionWrapper className="mb-12">
+        <LocationMap />
+      </SectionWrapper>
+
+      <SectionWrapper className="bg-[#EFEFEF] mb-12">
+        <Lodging />
+      </SectionWrapper>
+    
+      <SectionWrapper className="mb-12">
+        <ThingsToDo />
+      </SectionWrapper>
+
+      <SectionWrapper className="mb-12 pt-12 bg-[#EFEFEF]">
+        <Countdown />
+      </SectionWrapper>
+
+      <SectionWrapper className="mb-12">
+        <GalleryCarousel/>
+      </SectionWrapper>
+
+      <SectionWrapper className="mb-12">
+        <SpotifyPlaylist/>
       </SectionWrapper>
 
       <GoogleOAuthProvider clientId={ENV.GOOGLE_CLIENT_ID!}>
-        <SectionWrapper className="mb-36">
+        <SectionWrapper className="mb-12">
           <Message isMobile={isMobile} />
         </SectionWrapper>
       </GoogleOAuthProvider>
-
-      <SectionWrapper className="mb-36">
-        <DigitalEnvelope />
-      </SectionWrapper>
+    
 
       <div className="py-24 bg-background text-gray-700 relative text-center font-sans">
-        © {thisYear} by <span className="font-semibold">Fauzi</span>
+        © {thisYear} forked from 
+            <a 
+            className="font-semibold" 
+            href="https://github.com/fauzialz/amifauzi.com-open" 
+            target={"_blank"} 
+            rel="noreferrer"> Fauzi</a>
       </div>
-
-      <MusicPlayer play={!openWelcome} />
+      
+      <SectionWrapper className="mb-12">
+        <RegistryModal />
+      </SectionWrapper>
     </div>
   );
 }

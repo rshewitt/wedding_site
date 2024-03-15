@@ -5,6 +5,8 @@ import photo2 from "~/images/DSC_1931.jpg";
 import photo3 from "~/images/DSC_1968.jpg";
 import photo4 from "~/images/DSC_2001.jpg";
 
+const photos = [ photo1, photo2, photo3, photo4 ];
+
 const GalleryCarousel = () => {
     return (
         <div id="carousel_div" className="w-full px-1 md:px-4">
@@ -12,18 +14,13 @@ const GalleryCarousel = () => {
                 Gallery
             </h4>
             <Carousel showThumbs={false}>
-                <div>
-                    <img src={photo1} alt="photo1"/>
-                </div>
-                <div>
-                    <img src={photo2} alt="photo2"/>
-                </div>
-                <div>
-                    <img src={photo3} alt="photo3"/>
-                </div>
-                <div>
-                    <img src={photo4} alt="photo4"/>
-                </div>
+                {photos.map((photo,index) => (
+                    <>
+                    <div>
+                        <img src={photo} alt={`${index}`} loading="lazy"/>
+                    </div>
+                    </>
+                ))}
             </Carousel>
         </div>
         );

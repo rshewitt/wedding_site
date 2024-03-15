@@ -37,11 +37,21 @@ Open up [http://localhost:3000](http://localhost:3000) and you should be ready t
 ## TODO
 - Deployment
     - refresh on static web page deployment on aws ( s3, cloudfront, r53 ) 
-    - remove all unnecessary code. slim the app down
+    - remove all unnecessary code. slim the app down. look up remix deployment/build process.
+    - understand remix config files
+    - deploy the website
 - Features
     - finish spreadsheet append functionality from form 
     - add simple auth in front of app accepting password
+- Text Content
+    - our story 
+    - do we still need "additional festivities to be announced?" 
+    - bridal party "where we met" sections
+    - lodging 
+    - things to do 
+    - registry modal content
 - UI/Style Improvements
+    - get photos for bridal party
     - consider fonts that will match save the dates
     - move Reid & Brittany intro text above our heads
     - change Brittanys headshot
@@ -49,6 +59,11 @@ Open up [http://localhost:3000](http://localhost:3000) and you should be ready t
     - convert burger menu style into tailwind 
     - 1968 image don't crop. we need more vertical above us.
     - verify things work on desktop
+        - fix burger expanded menu
+        - center align checkboxes in form
+- Image optimization
+    - lazy/loading 
+    - optimize images using a build utility ( i.e. vite image compression )
 - Observations/Analysis
     - integrate https://logrocket.com/
 

@@ -67,3 +67,5 @@ Open up [http://localhost:3000](http://localhost:3000) and you should be ready t
 - Observations/Analysis
     - integrate https://logrocket.com/
 
+## Notes
+- this is a static web page with a form submission component. after looking into remix idk if I even get anything from it. remix loaders/actions help process and populate renders with data. this occurs on the remix server. i don't need this. what i need is to lazy load my carousel. i understand having a scrollto navigation may defeat the purpose but that depends on people going to the site and knowing where the expensive thing is which can occur if they're familiar with the site already. if they've visited it before and are aware of where the carousel is maybe the client device will natively cache the images on visit making the load time quicker? 

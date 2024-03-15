@@ -10,7 +10,7 @@ const styles = {
       top: '15px'
     },
     bmBurgerBars: {
-      background: '#052E16',
+      background: '#6b7280',
     },
     bmBurgerBarsHover: {
       background: '#a90000'
@@ -89,7 +89,7 @@ const BurgerMenu = () => {
     },
     {
         "div_id": "lodging_div",
-        "name": "Logging"
+        "name": "Lodging"
     },
     {
         "div_id": "ttd_dev",

@@ -48,7 +48,7 @@ const Message = ({ isMobile }: MessageProps) => {
 			  }}
 			>
 			  <fieldset disabled={fetcher.state === "submitting"}>
-                <p className="text-center font-head mb-3">What events are you attending?</p>
+                <p className="text-center font-head mb-3">What events are you planning to attend?</p>
                 <input className="mb-3" type="checkbox" name="events" value="Mardi Gras" />
                 <label htmlFor="event3" className="font-head px-5"> Mardi Gras: Fri 2/28 - Tues 3/4</label><br />
                 <input className="mb-3" type="checkbox" name="events" value="Rehearsal Dinner" />

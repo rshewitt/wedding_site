@@ -1,4 +1,4 @@
-import heroBg from "~/images/05FFD0C3-762A-4762-AAB3-F1737785E122_1_201_a.jpg";
+import heroBg from "~/images/home.jpg";
 
 const Home = () => {
     return (

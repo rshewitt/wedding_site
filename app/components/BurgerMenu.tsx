@@ -116,14 +116,14 @@ const BurgerMenu = () => {
         onClose={handleIsOpen} 
         styles={styles}>
         {navItems.map(navItem => (
-            <>
+            <div key={`bg_item_${navItem.div_id}`}>
             <button 
                 className="menu-item--small font-semibold text-white mb-6" 
                 key={`bg_item_${navItem.div_id}`}
                 onClick={()=>{executeScroll(navItem.div_id)}}
                 >{navItem.name}</button>
             <br/>
-            </>
+            </div>
         ))}
       </Menu>
     </div>

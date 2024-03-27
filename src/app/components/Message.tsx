@@ -3,29 +3,26 @@ import {
   useRef,
   useState,
 } from "react";
-import { useGoogleLogin } from "@react-oauth/google";
-import axios from "axios";
+import LoadingOverlay from 'react-loading-overlay-ts';
 
 const Message = () => {
-//   const fetcher = useFetcher<{ ok: boolean }>();
   const formRef = useRef<HTMLFormElement>(null);
   const [commentSubmitted, setCommentSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false); 
 
-  const sendMessage = useGoogleLogin({
-    onSuccess: async (res) => {
-      const userInfo = await axios.get(
-        "https://www.googleapis.com/oauth2/v3/userinfo",
-        {
-          headers: { Authorization: `Bearer ${res.access_token}` },
-        }
-      );
+  const scriptUrl = "https://script.google.com/macros/s/AKfycbyrSwUKoDYzFOHqPmMulr_Ij6AD53-N2QAZDdik2S9gQwq4sB6d_BnFyKJJl3CLMj7g/exec"
 
-      const formData = new FormData(formRef.current!);
-      formData.append("google_name", userInfo.data.name);
-    //   fetcher.submit(formData, { method: "post" });
-      setCommentSubmitted(true)
-    },
-  });
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) =>{
+        e.preventDefault()
+        setLoading(true);
+        fetch(scriptUrl, { method: 'POST', body: new FormData(formRef.current!)})
+        .then(res => {
+            console.log("SUCCESSFULLY SUBMITTED")
+            setCommentSubmitted(true)
+            setLoading(false)
+        })
+        .catch(err => console.log(err))
+  }
 
   return (
 	<div id="rsvp_div">
@@ -33,25 +30,28 @@ const Message = () => {
 		RVSP
 	  </h4>
 		<div className="flex justify-center px-4">
+          <LoadingOverlay
+            active={loading}
+            spinner
+            text='Submitting form...'
+          >
 		  <div className="rounded-lg shadow-2xl p-6 md:p-8 bg-white top-8 mb-6 md:mb-0">
 			{ !commentSubmitted ? (
 			<form
 			  ref={formRef}
 			  onSubmit={(e) => {
-				e.preventDefault();
-				sendMessage();
+				handleSubmit(e)
 			  }}
 			>
-			  {/* <fieldset disabled={fetcher.state === "submitting"}> */}
-              <fieldset>
+			  <fieldset disabled={loading}>
                 <p className="text-center text-black font-head mb-3">What events are you planning to attend?</p>
-                <input className="mb-3" type="checkbox" name="events" value="Mardi Gras" />
+                <input className="mb-3" type="checkbox" name="mardi_gras_event" value="Y" />
                 <label htmlFor="event3" className="font-head text-black px-5"> Mardi Gras: Fri 2/28 - Tues 3/4</label><br />
-                <input className="mb-3" type="checkbox" name="events" value="Rehearsal Dinner" />
+                <input className="mb-3" type="checkbox" name="rehearsal_event" value="Y" />
                 <label htmlFor="event1" className="font-head text-black px-5"> Rehearsal Dinner: Fri 3/7</label><br />
-                <input className="mb-3" type="checkbox" name="events" value="Ceremony & Reception" />
+                <input className="mb-3" type="checkbox" name="ceremony_event" value="Y" />
                 <label htmlFor="event4" className="font-head text-black px-5"> Ceremony & Reception: Sat 3/8</label><br />
-                <input className="mb-3" type="checkbox" name="events" value="Farewell Brunch" />
+                <input className="mb-3" type="checkbox" name="farewell_event" value="Y" />
                 <label htmlFor="event2" className="font-head text-black px-5"> Farewell Brunch: Sun 3/9</label><br />
                 <br />
 				<input
@@ -99,11 +99,12 @@ const Message = () => {
 				</div>
 			  </fieldset>
 			</form> ) : (
-				<h4 className="text-3xl font-head font-bold text-center md:mb-16 text-gray-700 px-4">
+				<h4 className="text-xl font-head font-bold text-center md:mb-16 text-gray-700 px-4">
 					Form submitted. See you there!
 	  			</h4> )
 			}
 		  </div>
+          </LoadingOverlay>
 		</div>
 	  </div>
   );

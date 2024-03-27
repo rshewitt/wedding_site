@@ -1,5 +1,6 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import Image from "next/image";
 
 import photo1 from "../images/IMG_6065.png"
 import photo2 from "../images/DSC_1937.jpg"
@@ -26,7 +27,11 @@ const GalleryCarousel = () => {
             <Carousel showThumbs={false}>
                 {photos.map((photo,index) => (
                     <div key={`${index}`}>
-                        <img src={photo} alt={`${index}`} loading="lazy"/>
+                        <Image 
+                            src={photo} 
+                            alt={`${index}`} 
+                            loading="lazy"
+                            placeholder="blur"/>
                     </div>
                 ))}
             </Carousel>

@@ -26,7 +26,7 @@ const LocationMap = () => {
               <h4 className="text-xl md:text-2xl mb-4 font-sans font-semibold text-gray-700">
                 {MAP_TITLE}
               </h4>
-              <p className="mb-16 md:mb-10 font-sans">{MAP_ADDRESS}</p>
+              <p className="md:mb-10 font-sans">{MAP_ADDRESS}</p>
               <div className="flex md:justify-start justify-center">
                 <a
                   href={MAP_REDIRECT_URL}

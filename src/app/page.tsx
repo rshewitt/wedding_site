@@ -53,7 +53,7 @@ export default function Index() {
 
       <BurgerMenu/>
 
-      <SectionWrapper className="bg-white mb-12">
+      <SectionWrapper className="bg-[#EFEFEF] mb-12">
         <BrideAndGroom />
       </SectionWrapper>
 

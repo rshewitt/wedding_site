@@ -59,9 +59,6 @@ const Agendas = () => {
           March 9
         </div>
       </div>
-      <div className="col-span-1 text-gray-400 text-lg md:text-center font-sans">
-        additional festivities to be announced!
-      </div>
     </div>
   );
 };

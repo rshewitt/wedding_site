@@ -1,7 +1,7 @@
 const Credit = () => {
     const thisYear = new Date().getFullYear();
     return (
-        <div className="py-24 bg-background text-gray-700 relative text-center font-sans">
+        <div className="py-20 bg-background text-gray-700 relative text-center font-sans">
         © {thisYear} forked from 
             <a 
             className="font-semibold" 

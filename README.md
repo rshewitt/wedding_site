@@ -36,7 +36,13 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 
-
+## Helper Utilities
+- favicon creator
+    - https://favicon.io/favicon-generator/
+- auth in front of cloudfront using labda@edge 
+    - https://learn.openwaterfoundation.org/owf-learn-aws/cdn/cloudfront/private-auth-lambda/
+- google sheets append using post form data 
+    - https://dev.to/tuasegun/submitting-custom-form-data-to-google-sheets-via-react-js-19al
 
 ## TODO
 - Deployment

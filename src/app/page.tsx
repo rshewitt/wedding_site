@@ -18,7 +18,6 @@ import Lodging from "./components/Lodging";
 import ThingsToDo from "./components/ThingsToDo";
 import Message from "./components/Message";
 import Credit from "./components/Credit";
-import { GoogleOAuthProvider } from "@react-oauth/google";
 import GalleryCarousel from "./components/GalleryCarousel";
 import SpotifyPlaylist from "./components/SpotifyPlayer";
 
@@ -89,11 +88,9 @@ export default function Index() {
         <SpotifyPlaylist/>
       </SectionWrapper>
 
-      <GoogleOAuthProvider clientId="replace_this">
-        <SectionWrapper className="mb-12">
-          <Message />
-        </SectionWrapper>
-      </GoogleOAuthProvider>
+      <SectionWrapper className="mb-12 bg-[#EFEFEF]">
+        <Message />
+      </SectionWrapper>
     
       <Credit/>
       

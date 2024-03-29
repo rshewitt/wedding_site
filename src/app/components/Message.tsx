@@ -25,7 +25,7 @@ const Message = () => {
   }
 
   return (
-	<div id="rsvp_div">
+	<div id="rsvp_div" className="py-14">
 	  <h4 className="text-3xl font-head font-bold text-center mb-10 md:mb-16 text-gray-700 px-4">
 		RVSP
 	  </h4>
@@ -44,18 +44,44 @@ const Message = () => {
 			  }}
 			>
 			  <fieldset disabled={loading}>
-                <p className="text-center text-black font-head mb-3">What events are you planning to attend?</p>
-                <input className="mb-3" type="checkbox" name="mardi_gras_event" value="Y" />
-                <label htmlFor="event3" className="font-head text-black px-5"> Mardi Gras: Fri 2/28 - Tues 3/4</label><br />
-                <input className="mb-3" type="checkbox" name="rehearsal_event" value="Y" />
-                <label htmlFor="event1" className="font-head text-black px-5"> Rehearsal Dinner: Fri 3/7</label><br />
-                <input className="mb-3" type="checkbox" name="ceremony_event" value="Y" />
-                <label htmlFor="event4" className="font-head text-black px-5"> Ceremony & Reception: Sat 3/8</label><br />
-                <input className="mb-3" type="checkbox" name="farewell_event" value="Y" />
+                <p className="text-xl text-center text-black font-head mb-6">What events are you planning to attend?</p>
+                <div className="mb-3">
+                    <input 
+                        type="checkbox" 
+                        className="h-8 w-8 rounded-full border-black text-green-950" 
+                        name="mardi_gras_event" 
+                        value="Y"
+                    />
+                    <label htmlFor="event3" className="font-head text-black px-5"> Mardi Gras: Fri 2/28 - Tues 3/4</label><br />
+                </div>
+                <div className="mb-3">
+                    <input 
+                        type="checkbox" 
+                        className="h-8 w-8 rounded-full border-black text-green-950" 
+                        name="rehearsal_event" 
+                        value="Y"
+                    />
+                    <label htmlFor="event1" className="font-head text-black px-5"> Rehearsal Dinner: Fri 3/7</label><br />
+                </div>
+                <div className="mb-3">
+                    <input 
+                        type="checkbox" 
+                        className="h-8 w-8 rounded-full border-black text-green-950" 
+                        name="ceremony_event"
+                        value="Y"
+                    />
+                    <label htmlFor="event4" className="font-head text-black px-5"> Ceremony & Reception: Sat 3/8</label><br />
+                </div>
+                <input 
+                    type="checkbox" 
+                    className="h-8 w-8 rounded-full border-black text-green-950" 
+                    name="farewell_event"
+                    value="Y"
+                />
                 <label htmlFor="event2" className="font-head text-black px-5"> Farewell Brunch: Sun 3/9</label><br />
                 <br />
 				<input
-				  className="w-full bg-[#f8fafc] text-black rounded border px-3 py-1.5 mb-6 outline-[#052E16]"
+				  className="w-full bg-[#f8fafc] text-black rounded border px-3 py-1.5 mb-6 outline-green-950"
 				  placeholder="First Name"
 				  name="first_name"
 				  required

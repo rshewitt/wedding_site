@@ -1,5 +1,8 @@
 import TextWithLine from "./Utils/TextWithLine";
 import DefaultPic from "../images/default.jpg"
+import DimaPic from "../images/dima.jpeg"
+import MaddyPic from "../images/maddy.jpg"
+import Laynnae from "../images/lynnae.jpg"
 import Image from "next/image";
 
 const BridalParty = () => {
@@ -12,7 +15,7 @@ const BridalParty = () => {
         <div className="w-full md:w-1/2 px-4">
           <div className="flex flex-col items-center py-14 sm:px-8 lg:p-20 text-center">
             <Image
-              src={DefaultPic}
+              src={MaddyPic}
               alt="maid_of_honor"
               className="w-48 h-48 rounded-full mb-8"
             />
@@ -23,7 +26,7 @@ const BridalParty = () => {
               <TextWithLine>Maid of Honor</TextWithLine>
             </div>
             <p className="font-sans text-gray-500 leading-6">
-              Brittany and Maddy met in Sacramento, CA. [ insert text]
+              Brittany and Maddy met in Sacramento, CA. in 2017.
             </p>
           </div>
         </div>
@@ -32,7 +35,7 @@ const BridalParty = () => {
           <div className="flex flex-col h-full items-center py-14 sm:px-8 lg:p-20 text-center justify-between">
             <div className="flex flex-col items-center">
               <Image
-                src={DefaultPic}
+                src={Laynnae}
                 alt="matron_of_honor"
                 className="w-48 h-48 rounded-full mb-8"
               />
@@ -45,7 +48,7 @@ const BridalParty = () => {
                 <TextWithLine>Matron of Honor</TextWithLine>
               </div>
               <p className="font-sans text-gray-500 leading-6">
-                Brittany and Lynnae met in Sacramento, CA [ insert text ]
+                Brittany and Lynnae met in Sacramento, CA in 2014.
               </p>
             </div>
           </div>
@@ -55,7 +58,7 @@ const BridalParty = () => {
           <div className="flex flex-col h-full items-center py-14 sm:px-8 lg:p-20 text-center justify-between">
             <div className="flex flex-col items-center">
               <Image
-                src={DefaultPic}
+                src={DimaPic}
                 alt="best_man"
                 className="w-48 h-48 rounded-full mb-8"
               />
@@ -68,7 +71,9 @@ const BridalParty = () => {
                 <TextWithLine>Best Man</TextWithLine>
               </div>
               <p className="font-sans text-gray-500 leading-6">
-                Reid and Dima met in high school in 2006 [ insert text ]
+                Reid and Dima met at Mira Loma High School in Sacramento, CA in 2006. 
+                Over 18 years they have enjoyed countless conversations, 
+                memories, and beer. Let&apos;s be honest, a LOT of beer. 
               </p>
             </div>
           </div>

@@ -56,7 +56,9 @@ const BrideAndGroom = () => {
             Our Story
         </h3>
         <div className="px-4 mb-4 text-gray-500 font-head md:text-lg font-medium">
-            We first met in Sacramento, CA [ insert more content here ]
+            We first met in Sacramento, CA in 2017 but lived in different parts
+            of the country. In 2019, we rekindled our relationship and have been 
+            inseparable ever since. Now we have a dog and a house in Parker, CO.
         </div>
         </div>
       </div>

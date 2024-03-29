@@ -16,7 +16,7 @@ const Home = () => {
         <div className="w-full absolute top-0 left-0 text-center mt-10">
          <div className="mb-1">
           <h4
-            className="text-center font-head font-bold text-5xl pt-20 text-white"
+            className="text-center font-head font-bold text-5xl pt-10 text-white"
             style={{ textShadow: "5px 5px 2px #052E16" }}
           >
             Brittany & Reid

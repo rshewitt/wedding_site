@@ -6,6 +6,11 @@
 .pnp.js
 .yarn/install-state.gz
 
+# do not check this into source control!
+/lambda
+
+.env 
+
 # testing
 /coverage
 

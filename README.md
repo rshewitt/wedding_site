@@ -47,10 +47,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## TODO
 - Deployment
     - refresh on static web page deployment on aws ( s3, cloudfront, r53 ) 
-    - remove all unnecessary code. slim the app down. look up remix deployment/build process.
-    - understand remix config files
     - deploy the website
-    - switch to next js
+- Immediate fixes
+    - double-click is needed to open the welcome letter. 
 - Features
     - finish spreadsheet append functionality from form 
     - add simple auth in front of app accepting password
@@ -61,7 +60,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     - lodging 
     - things to do 
     - registry modal content
+- Optimizations
+    - images
+        - reduce sizes to minimum
 - UI/Style Improvements
+    - make the checkboxes bigger and wider. the text needs to be bigger too.
+    - normalize margin/padding between sections and content in general
     - get photos for bridal party
     - consider fonts that will match save the dates
     - move Reid & Brittany intro text above our heads

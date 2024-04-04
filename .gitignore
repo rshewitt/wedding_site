@@ -8,6 +8,7 @@
 
 # do not check this into source control!
 /lambda
+/cloudfront
 
 .env 
 

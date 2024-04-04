@@ -35,19 +35,20 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+## System Diagram
+![alt text](sys_diagram.png)
 
-
-
+## Helper Utilities
+- favicon creator
+    - https://favicon.io/favicon-generator/
+    
 ## TODO
 - Deployment
-    - refresh on static web page deployment on aws ( s3, cloudfront, r53 ) 
-    - remove all unnecessary code. slim the app down. look up remix deployment/build process.
-    - understand remix config files
-    - deploy the website
-    - switch to next js
+    - setup ci action to run e2e tests, build/export, upload to s3
+- Immediate fixes
+    - double-click is needed to open the welcome letter ( sometimes ) 
 - Features
-    - finish spreadsheet append functionality from form 
-    - add simple auth in front of app accepting password
+    - e2e tests (cypress)
 - Text Content
     - our story 
     - do we still need "additional festivities to be announced?" 
@@ -55,14 +56,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     - lodging 
     - things to do 
     - registry modal content
+- Optimizations
+    - images
+        - reduce sizes to minimum
 - UI/Style Improvements
-    - get photos for bridal party
+    - normalize margin/padding between sections and content in general
     - consider fonts that will match save the dates
     - move Reid & Brittany intro text above our heads
     - change Brittanys headshot
     - fix padding for breakpoint ( desktop ) of brittany and reid intro 
-    - convert burger menu style into tailwind 
-    - 1968 image don't crop. we need more vertical above us.
     - verify things work on desktop
         - fix burger expanded menu
         - center align checkboxes in form

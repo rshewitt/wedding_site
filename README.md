@@ -35,24 +35,20 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+## System Diagram
+![alt text](sys_diagram.png)
 
 ## Helper Utilities
 - favicon creator
     - https://favicon.io/favicon-generator/
-- auth in front of cloudfront using labda@edge 
-    - https://learn.openwaterfoundation.org/owf-learn-aws/cdn/cloudfront/private-auth-lambda/
-- google sheets append using post form data 
-    - https://dev.to/tuasegun/submitting-custom-form-data-to-google-sheets-via-react-js-19al
-
+    
 ## TODO
 - Deployment
-    - refresh on static web page deployment on aws ( s3, cloudfront, r53 ) 
-    - deploy the website
+    - setup ci action to run e2e tests, build/export, upload to s3
 - Immediate fixes
-    - double-click is needed to open the welcome letter. 
+    - double-click is needed to open the welcome letter ( sometimes ) 
 - Features
-    - finish spreadsheet append functionality from form 
-    - add simple auth in front of app accepting password
+    - e2e tests (cypress)
 - Text Content
     - our story 
     - do we still need "additional festivities to be announced?" 
@@ -64,15 +60,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     - images
         - reduce sizes to minimum
 - UI/Style Improvements
-    - make the checkboxes bigger and wider. the text needs to be bigger too.
     - normalize margin/padding between sections and content in general
-    - get photos for bridal party
     - consider fonts that will match save the dates
     - move Reid & Brittany intro text above our heads
     - change Brittanys headshot
     - fix padding for breakpoint ( desktop ) of brittany and reid intro 
-    - convert burger menu style into tailwind 
-    - 1968 image don't crop. we need more vertical above us.
     - verify things work on desktop
         - fix burger expanded menu
         - center align checkboxes in form

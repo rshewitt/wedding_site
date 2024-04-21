@@ -1,6 +1,43 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
+
+const breezeBlocks = localFont({
+    src: [
+        {
+            path: "../../public/fonts/Breezeblocks.otf",
+        },
+    ],
+    variable: "--font-breezeblocks",
+});
+
+const montserrat = localFont({
+    src: [
+        {
+            path: "../../public/fonts/Montserrat-Regular.ttf",
+        },
+    ],
+    variable: "--font-monstserrat",
+});
+
+const montserratBold = localFont({
+    src: [
+        {
+            path: "../../public/fonts/Montserrat-Medium.ttf",
+        },
+    ],
+    variable: "--font-monstserratBold",
+});
+
+const montserratItalic = localFont({
+    src: [
+        {
+            path: "../../public/fonts/Montserrat-MediumItalic.ttf",
+        },
+    ],
+    variable: "--font-monstserratItalic",
+});
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +53,11 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={inter.className}>{children}</body>
+            <body
+                className={`${montserratItalic.variable} ${montserratBold.variable} ${breezeBlocks.variable} ${montserrat.variable} ${inter.className}`}
+            >
+                {children}
+            </body>
         </html>
     );
 }

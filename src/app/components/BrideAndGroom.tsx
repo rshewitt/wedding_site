@@ -14,13 +14,13 @@ const BrideAndGroom = () => {
                             alt="bride"
                             className="w-48 h-48 rounded-full mb-8"
                         />
-                        <h3 className="text-5xl font-medium font-head mb-4 text-gray-800">
+                        <h3 className="text-xl-wel font-normalBold mb-4 text-gray-800">
                             Brittany Morgan McMahon
                         </h3>
                         <div className="mb-4">
                             <TextWithLine>Bride</TextWithLine>
                         </div>
-                        <p className="font-sans text-gray-500 leading-6">
+                        <p className="font-normal text-gray-500 leading-6">
                             Born on August 25th, 1992 in San Diego, CA to{" "}
                             <strong>James Glenn McMahon</strong> and{" "}
                             <strong>Michelle Ford Toleos</strong>.
@@ -36,7 +36,7 @@ const BrideAndGroom = () => {
                                 alt="groom"
                                 className="w-48 h-48 rounded-full mb-8"
                             />
-                            <h3 className="text-5xl font-medium font-head mb-4 text-gray-800">
+                            <h3 className="text-xl-wel font-normalBold mb-4 text-gray-800">
                                 Reid Samuel Hewitt
                             </h3>
                         </div>
@@ -44,7 +44,7 @@ const BrideAndGroom = () => {
                             <div className="mb-4">
                                 <TextWithLine>Groom</TextWithLine>
                             </div>
-                            <p className="font-sans text-gray-500 leading-6">
+                            <p className="font-normal text-gray-500 leading-6">
                                 Born on June 10th 1992 in Sacramento, CA to{" "}
                                 <strong>Robbin Van Herr Waarden Hewitt</strong>{" "}
                                 and <strong>Ann Marie Hewitt</strong>.
@@ -53,14 +53,20 @@ const BrideAndGroom = () => {
                     </div>
                 </div>
                 <div className="max-w-3xl mx-auto text-center">
-                    <h3 className="text-3xl md:text-4xl font-black mb-6 text-cente text-gray-700 font-sans">
+                    <h3 className="text-3xl-wel lg:text-5xl-wel font-squiggly mb-6 text-center text-gray-700">
                         Our Story
                     </h3>
-                    <div className="px-4 mb-4 text-gray-500 font-head md:text-lg font-medium">
-                        We first met in Sacramento, CA in 2017 but lived in
-                        different parts of the country. In 2019, we rekindled
-                        our relationship and have been inseparable ever since.
-                        Now we have a dog and a house in Parker, CO.
+                    <div className="px-4 mb-4 text-gray-500 font-normal">
+                        We first met in Sacramento, CA in 2017; we lived on
+                        opposite sides of the country, and just weren&apos;t
+                        sure what the future held. As fate would have it, 2019
+                        rolled around, we reconnected and rekindled our
+                        relationship, and have been inseparable ever since. From
+                        California to Colorado, we made our home. On October 12,
+                        2023, we hiked to the top of a volcano in Bali to watch
+                        the sunrise – just as we turned to start our descent,
+                        Reid proposed with a, &quot;There you go, dude.&quot;
+                        Many laughs, tears, and one YES later, we were engaged.
                     </div>
                 </div>
             </div>

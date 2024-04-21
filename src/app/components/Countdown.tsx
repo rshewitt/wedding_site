@@ -46,7 +46,7 @@ const Countdown = memo(() => {
 
     return (
         <div className="w-full px-1 md:px-4">
-            <div className="text-3xl font-head font-bold text-center mb-10 pt-10 text-gray-700 px-2">
+            <div className="text-3xl-wel lg:text-5xl-wel font-squiggly text-center mb-10 pt-10 text-gray-700 px-2">
                 <h4 className="mb-1">See you there in...</h4>
             </div>
 
@@ -72,7 +72,7 @@ const NumberCard = memo(({ number, label }: NumberCardProps) => {
         number < 100 ? ("0" + number).slice(-2) : String(number);
 
     return (
-        <div className="rounded-lg bg-white py-7 px-2 w-24 text-center mx-2 text-gray-700 font-sans">
+        <div className="rounded-lg bg-white py-7 px-2 w-24 text-center mx-2 text-xl-wel font-normalBold text-gray-800">
             <div className="text-3xl mb-2">{numberString}</div>
             <div>{label}</div>
         </div>

@@ -15,8 +15,8 @@ const LocationMap = () => {
                 </div>
             </div>
 
-            <div className="md:w-1/2 w-full px-4 mb-6 md:mb-0 pt-10">
-                <div className="top-8 text-center md:text-left pt-10">
+            <div className="md:w-1/2 w-full px-4 mb-6 md:mb-0">
+                <div className="top-8 text-center md:text-left">
                     <h3 className="text-3xl-wel lg:text-5xl-wel font-squiggly mb-3 text-gray-700">
                         Wedding Location
                     </h3>

@@ -19,7 +19,6 @@ export default function WelcomeModal({ isOpen, onClose }: WelcomeModalProps) {
                         src={welcomeImage}
                         alt="home_img"
                         fill
-                        // objectFit="cover"
                         priority
                         style={{ objectFit: "cover" }}
                     />
@@ -29,6 +28,7 @@ export default function WelcomeModal({ isOpen, onClose }: WelcomeModalProps) {
                         </h4>
                         <button
                             type="button"
+                            id="welcome_button"
                             className="px-5 transition-all font-normal py-3 font-sans font-medium rounded-md outline outline-white outline-1 outline-contrast-3 text-white disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
                             onClick={onClose}
                         >

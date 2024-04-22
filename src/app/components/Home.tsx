@@ -17,7 +17,10 @@ const Home = () => {
             />
             <div className="w-full absolute top-0 left-0 text-center mt-10">
                 <div className="mb-1">
-                    <h4 className="text-center font-squiggly font-head text-3xl-wel sm:pt-2 text-white">
+                    <h4
+                        id="home_intro_us"
+                        className="text-center font-squiggly font-head text-3xl-wel sm:pt-2 text-white"
+                    >
                         Brittany & Reid
                     </h4>
                     <div className="text-center font-normal text-xl-wel">

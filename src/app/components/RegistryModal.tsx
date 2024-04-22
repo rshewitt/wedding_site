@@ -9,7 +9,7 @@ const RegistryModal = () => {
         setOpen(!open);
     };
     return (
-        <div className="fixed bottom-0 right-0 mr-3 mb-3">
+        <div id="registry_button" className="fixed bottom-0 right-0 mr-3 mb-3">
             <button
                 onClick={handleClick}
                 className="px-4 py-4 transition-all text-lg font-normal w-full rounded-lg bg-[#354834] outline-contrast-3 text-white outline-4 disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
@@ -39,6 +39,7 @@ const RegistryModal = () => {
                 </div>
                 <div className="text-center py-4">
                     <a
+                        id="registry2_button"
                         className="mb-3 px-4 py-4 text-white text-lg font-normal rounded-lg bg-[#354834]"
                         href="https://www.zola.com/registry/brittanyandreid2025"
                         target="_blank"

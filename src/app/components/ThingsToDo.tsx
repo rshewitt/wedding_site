@@ -4,7 +4,7 @@ const ThingsToDo = () => {
             <div className="text-3xl-wel lg:text-5xl-wel font-squiggly text-center mb-10 pt-10 text-gray-700 px-2">
                 <h4 className="mb-1">Things To Do</h4>
             </div>
-            <div className="w-full md:w-1/2 px-4">
+            <div className="w-full text-center px-4">
                 <div className="flex flex-col items-center sm:px-8 lg:p-20 text-center">
                     <div className="col-span-1 text-gray-400 text-left text-xl-wel font-normalBold pb-4">
                         <a
@@ -26,7 +26,7 @@ const ThingsToDo = () => {
                 </div>
             </div>
 
-            <div className="w-full md:w-1/2 px-4">
+            <div className="w-full text-center px-4">
                 <div className="flex flex-col items-center sm:px-8 lg:p-20 text-center">
                     <div className="col-span-1 text-gray-400 text-left text-xl-wel font-normalBold pb-4 pt-10">
                         <a
@@ -47,7 +47,7 @@ const ThingsToDo = () => {
                 </div>
             </div>
 
-            <div className="w-full md:w-1/2 px-4">
+            <div className="w-full text-center px-4">
                 <div className="flex flex-col items-center sm:px-8 lg:p-20 text-center">
                     <div className="col-span-1 text-gray-400 text-left text-xl-wel font-normalBold pb-4 pt-10">
                         <a
@@ -67,7 +67,7 @@ const ThingsToDo = () => {
                 </div>
             </div>
 
-            <div className="w-full md:w-1/2 px-4">
+            <div className="w-full text-center px-4">
                 <div className="flex flex-col items-center sm:px-8 lg:p-20 text-center">
                     <div className="col-span-1 text-gray-400 text-left text-xl-wel font-normalBold pb-4 pt-10">
                         <a
@@ -86,7 +86,7 @@ const ThingsToDo = () => {
                 </div>
             </div>
 
-            <div className="w-full md:w-1/2 px-4">
+            <div className="w-full text-center px-4">
                 <div className="flex flex-col items-center sm:px-8 lg:p-20 text-center">
                     <div className="col-span-1 text-gray-400 text-left text-xl-wel font-normalBold pb-4 pt-10">
                         <a
@@ -107,7 +107,7 @@ const ThingsToDo = () => {
                 </div>
             </div>
 
-            <div className="w-full md:w-1/2 px-4">
+            <div className="w-full text-center px-4">
                 <div className="flex flex-col items-center sm:px-8 lg:p-20 text-center">
                     <div className="col-span-1 text-gray-400 text-left text-xl-wel font-normalBold pb-4 pt-10">
                         <a
@@ -120,7 +120,7 @@ const ThingsToDo = () => {
                     </div>
                     <p className="text-gray-500 font-normal leading-6">
                         Whether you want to experience rich history, or a white
-                        alligator at the Audubonon Zoo, this list is for you!
+                        alligator at the Audubon Zoo, this list is for you!
                     </p>
                 </div>
             </div>

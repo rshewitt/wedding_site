@@ -12,6 +12,14 @@ jobs:
         steps:
         - name: 'Checkout'
           uses: actions/checkout@v4
+        - name: Setup Node
+          uses: actions/setup-node@v4
+          with:
+            node-version: "20"  
+        - name: Install Dependencies
+          run: npm i
+        - name: Run App
+          run: npm run dev
         - name: 'Cypress run'
           uses: cypress-io/github-action@v5
     build:

@@ -19,7 +19,7 @@ jobs:
         - name: Install Dependencies
           run: npm i
         - name: Run App
-          run: npm run dev
+          run: docker compose up -d
         - name: 'Cypress run'
           uses: cypress-io/github-action@v5
     build:

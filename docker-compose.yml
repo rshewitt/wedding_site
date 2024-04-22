@@ -10,12 +10,3 @@ services:
     volumes:
       - .:/app
       - /app/node_modules
-  test:
-    image: cypress/included:13.7.1
-    entrypoint: []
-    command: /bin/bash -c "npx wait-on http://localhost/3000 && cypress run"
-    working_dir: /e2e
-    volumes:
-    - ./e2e:/e2e
-    depends_on:
-      - app

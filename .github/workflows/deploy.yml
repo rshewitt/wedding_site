@@ -1,10 +1,22 @@
-name: Deploy to S3
+name: Test and Deploy
+
 on:
-    pull_request:
-      branches: [ main ]
+    # pull_request:
+    #   branches: [ main ]
+    push:
+        branches: [main, develop"]
+    
 jobs:
+    test:
+        runs-on: ubuntu-22.04
+        steps:
+        - name: 'Checkout'
+          uses: actions/checkout@v4
+        - name: 'Cypress run'
+          uses: cypress-io/github-action@v5
     build:
         runs-on: ubuntu-22.04
+        needs: test
         steps:
             - name: 'Checkout'
               uses: actions/checkout@v4
@@ -16,13 +28,14 @@ jobs:
               run: npm i
             - name: Build App
               run: npm run build
-    deploy:
-        runs-on: ubuntu-22.04
-        steps:
-            - name: Configure AWS
-              uses: aws-actions/configure-aws-credentials@v1
-              with:
-                aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-                aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-                aws-region: us-east-2
-            - run: aws s3 sync ./out s3://mchewittwedding.com
+    # deploy:
+    #     runs-on: ubuntu-22.04
+    #     needs: build
+    #     steps:
+    #         - name: Configure AWS
+    #           uses: aws-actions/configure-aws-credentials@v1
+    #           with:
+    #             aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+    #             aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    #             aws-region: us-east-2
+    #         - run: aws s3 sync ./out s3://mchewittwedding.com

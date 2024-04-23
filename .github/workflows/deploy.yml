@@ -8,28 +8,19 @@ on:
     
 jobs:
     test:
-        runs-on: ubuntu-22.04
+        runs-on: ubuntu-latest
         steps:
         - name: 'Checkout'
           uses: actions/checkout@v4
-        - name: Run App
-          run: docker compose up -d
-        - name: 'Cypress run'
-          uses: cypress-io/github-action@v5
-    build:
-        runs-on: ubuntu-22.04
-        needs: test
-        steps:
-            - name: 'Checkout'
-              uses: actions/checkout@v4
-            - name: Setup Node
-              uses: actions/setup-node@v4
-              with:
-                node-version: "20"
-            - name: Install Dependencies
-              run: npm i
-            - name: Build App
-              run: npm run build
+
+        - name: Cypress Run
+          uses: cypress-io/github-action@v6
+          with:
+            project: .
+            browser: chrome
+            build: npm run build
+            start: npm run dev
+            wait-on: "http://localhost:3000"
     # deploy:
     #     runs-on: ubuntu-22.04
     #     needs: build

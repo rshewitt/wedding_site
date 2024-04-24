@@ -1,5 +1,5 @@
 import TextWithLine from "./Utils/TextWithLine";
-import bride from "../images/bride2.jpg";
+import bride from "../images/bride.jpg";
 import groom from "../images/groom.jpg";
 import Image from "next/image";
 

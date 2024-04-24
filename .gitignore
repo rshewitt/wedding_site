@@ -7,7 +7,6 @@
 .yarn/install-state.gz
 
 # do not check this into source control!
-/lambda
 /cloudfront
 
 # cypress 

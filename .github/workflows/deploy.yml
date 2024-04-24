@@ -21,10 +21,21 @@ jobs:
             build: npm run build
             start: npm run dev
             wait-on: "http://localhost:3000"
+        
+        - name: Upload Build Artifact
+          uses: actions/upload-artifact@master
+          with:
+            name: app-build
+            path: ./out
     deploy:
         runs-on: ubuntu-22.04
         needs: test
         steps:
+            - name: Download Build Artifact
+              uses: actions/download-artifact@master
+              with:
+                name: app-build
+                path: .out/
             - name: Configure AWS
               uses: aws-actions/configure-aws-credentials@v1
               with:

@@ -24,9 +24,10 @@ const Message = () => {
             .catch((err) => console.log(err));
     };
 
+    // TODO: update the events to a loop create
     return (
         <div id="rsvp_div" className="py-14">
-            <h4 className="text-3xl font-head font-bold text-center mb-10 md:mb-16 text-gray-700 px-4">
+            <h4 className="text-3xl-wel lg:text-5xl-wel font-squiggly text-center mb-10 md:mb-16 text-gray-700 px-4">
                 RVSP
             </h4>
             <div className="flex justify-center px-4">
@@ -44,7 +45,7 @@ const Message = () => {
                                 }}
                             >
                                 <fieldset disabled={loading}>
-                                    <p className="text-xl text-center text-black font-head mb-6">
+                                    <p className="text-xl-wel font-normalBold text-black text-center mb-6">
                                         What events are you planning to attend?
                                     </p>
                                     <div className="mb-3">
@@ -56,26 +57,10 @@ const Message = () => {
                                         />
                                         <label
                                             htmlFor="event3"
-                                            className="font-head text-black px-5"
+                                            className="text-md-twl font-normalBold text-black px-5"
                                         >
                                             {" "}
                                             Mardi Gras: Fri 2/28 - Tues 3/4
-                                        </label>
-                                        <br />
-                                    </div>
-                                    <div className="mb-3">
-                                        <input
-                                            type="checkbox"
-                                            className="h-8 w-8 rounded-full border-black text-green-950"
-                                            name="rehearsal_event"
-                                            value="Y"
-                                        />
-                                        <label
-                                            htmlFor="event1"
-                                            className="font-head text-black px-5"
-                                        >
-                                            {" "}
-                                            Rehearsal Dinner: Fri 3/7
                                         </label>
                                         <br />
                                     </div>
@@ -88,7 +73,7 @@ const Message = () => {
                                         />
                                         <label
                                             htmlFor="event4"
-                                            className="font-head text-black px-5"
+                                            className="text-md-twl font-normalBold text-black px-5"
                                         >
                                             {" "}
                                             Ceremony & Reception: Sat 3/8
@@ -103,7 +88,7 @@ const Message = () => {
                                     />
                                     <label
                                         htmlFor="event2"
-                                        className="font-head text-black px-5"
+                                        className="text-md-twl font-normalBold text-black px-5"
                                     >
                                         {" "}
                                         Farewell Brunch: Sun 3/9
@@ -111,35 +96,35 @@ const Message = () => {
                                     <br />
                                     <br />
                                     <input
-                                        className="w-full bg-[#f8fafc] text-black rounded border px-3 py-1.5 mb-6 outline-green-950"
+                                        className="w-full bg-[#f8fafc] text-md-twl font-normalBold text-black rounded border px-3 py-1.5 mb-6"
                                         placeholder="First Name"
                                         name="first_name"
                                         required
                                         maxLength={70}
                                     />
                                     <input
-                                        className="w-full bg-[#f8fafc] text-black rounded border px-3 py-1.5 mb-6 outline-[#052E16]"
+                                        className="w-full bg-[#f8fafc] text-md-twl font-normalBold text-black rounded border px-3 py-1.5 mb-6"
                                         placeholder="Last Name"
                                         name="last_name"
                                         required
                                         maxLength={70}
                                     />
                                     <input
-                                        className="w-full bg-[#f8fafc] text-black rounded border px-3 py-1.5 mb-6 outline-[#052E16]"
+                                        className="w-full bg-[#f8fafc] text-md-twl font-normalBold text-black rounded border px-3 py-1.5 mb-6"
                                         placeholder="Email Address"
                                         name="email"
                                         required
                                         maxLength={70}
                                     />
                                     <input
-                                        className="w-full bg-[#f8fafc] text-black rounded border px-3 py-1.5 mb-6 outline-[#052E16]"
+                                        className="w-full bg-[#f8fafc] text-md-twl font-normalBold text-black rounded border px-3 py-1.5 mb-6"
                                         placeholder="Phone Number"
                                         name="phone"
                                         required
                                         maxLength={70}
                                     />
                                     <textarea
-                                        className="w-full bg-[#f8fafc] text-black rounded border px-3 py-1.5 min-h-[6rem] mb-4 outline-[#052E16]"
+                                        className="w-full bg-[#f8fafc] text-md-twl font-normalBold text-black rounded border px-3 py-1.5 mb-6"
                                         placeholder="Message"
                                         name="message"
                                         maxLength={750}
@@ -148,7 +133,7 @@ const Message = () => {
                                         <button
                                             type="submit"
                                             id="submit-message-btn"
-                                            className="px-5 py-2 transition-all text-lg font-semibold rounded-md bg-green-950 hover:bg-green-800 outline-[#6867AC] text-white outline-4 disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
+                                            className="px-5 py-2 transition-all text-lg font-semibold rounded-md bg-[#354834] outline-[#6867AC] text-white outline-4 disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
                                         >
                                             Submit
                                         </button>

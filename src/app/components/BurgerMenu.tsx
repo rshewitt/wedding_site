@@ -10,10 +10,10 @@ const styles = {
         top: "15px",
     },
     bmBurgerBars: {
-        background: "#6b7280",
+        background: "#0f2e31",
     },
     bmBurgerBarsHover: {
-        background: "#a90000",
+        background: "#0f2e31",
     },
     bmCrossButton: {
         height: "24px",
@@ -28,7 +28,7 @@ const styles = {
         width: "250px",
     },
     bmMenu: {
-        background: "#052E16",
+        background: "#354834",
         padding: "0.5em 1.5em 0",
         fontSize: "1.15em",
         borderRadius: "10px",
@@ -110,7 +110,7 @@ const BurgerMenu = () => {
 
     return (
         <div
-            className="fixed top-0 left-0 mx-3 bg-green-950 rounded-lg"
+            className="fixed top-0 left-0 mx-3 rounded-lg"
             style={{ marginTop: "10px", zIndex: "5" }}
         >
             <Menu
@@ -122,7 +122,7 @@ const BurgerMenu = () => {
                 {navItems.map((navItem) => (
                     <div key={`bg_item_${navItem.div_id}`}>
                         <button
-                            className="menu-item--small font-semibold text-white mb-6"
+                            className="menu-item--small font-normal text-xl-wel text-white mb-6"
                             key={`bg_item_${navItem.div_id}`}
                             onClick={() => {
                                 executeScroll(navItem.div_id);

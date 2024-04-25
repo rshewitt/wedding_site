@@ -2,7 +2,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import Image from "next/image";
 
-import photo1 from "../images/IMG_6065.png";
+import photo1 from "../images/IMG_6065.jpg";
 import photo2 from "../images/DSC_1937.jpg";
 import photo3 from "../images/DSC_1849.jpg";
 import photo4 from "../images/DSC_1912.jpg";
@@ -12,8 +12,8 @@ import photo7 from "../images/DSC_1937.jpg";
 import photo8 from "../images/DSC_1946.jpg";
 import photo9 from "../images/DSC_1954.jpg";
 import photo10 from "../images/DSC_2005.jpg";
-import photo11 from "../images/IMG_5773.png";
-import photo12 from "../images/IMG_5776.png";
+import photo11 from "../images/IMG_5773.jpg";
+import photo12 from "../images/IMG_5776.jpg";
 
 const photos = [
     photo1,
@@ -33,7 +33,7 @@ const photos = [
 const GalleryCarousel = () => {
     return (
         <div id="carousel_div" className="w-full px-1 md:px-4">
-            <h4 className="text-3xl font-head font-bold text-center mb-14 pt-10 text-gray-700">
+            <h4 className="text-3xl-wel lg:text-5xl-wel font-squiggly text-center mb-14 pt-10 text-gray-700">
                 Gallery
             </h4>
             <Carousel showThumbs={false}>

@@ -1,9 +1,32 @@
-import TextWithLine from "./Utils/TextWithLine";
-import DefaultPic from "images/default.jpg";
-import DimaPic from "../images/dima.jpg";
-import MaddyPic from "../images/maddy.jpg";
+import Maddy from "../images/maddy.jpg";
+import Dima from "../images/dima.jpg";
 import Laynnae from "../images/lynnae.jpg";
-import Image from "next/image";
+import Profile from "./Utils/Profile";
+import TextWithLine from "./Utils/TextWithLine";
+
+const people = [
+    {
+        pic: Maddy,
+        altVal: "maid_of_honor",
+        name: "Madelyn Hayes",
+        role: "Maid of Honor",
+        desc: "Brittany and Maddy met in Sacramento, CA in 2017. From friends, to roommates, to best friends, and beyond – Maddy and Brittany are practically sisters. They may live in different states now, but that doesn&apos;t stop them from getting together as much as humanly possible, usually over a game of pool and a few hazy IPAs.",
+    },
+    {
+        pic: Laynnae,
+        altVal: "matron_of_honor",
+        name: "Lynnae Petricevic",
+        role: "Matron of Honor",
+        desc: "Brittany and Lynnae met in Sacramento, CA in 2014. Lynnae was Brittany&apos;s first friend in California, a longtime career mentor, next-door neighbor of over 7 years, and a part of the family forever. Lynnae is a founding member of the Finer Things Club™ alongside her husband, Pero, and Brittany. Whether it&apos;s in the US or abroad, you&apos;re bound to see the two of them together.",
+    },
+    {
+        pic: Dima,
+        altVal: "best_man",
+        name: "Dmitriy Gumenyuk",
+        role: "Best Man",
+        desc: "Reid and Dima met at Mira Loma High School in Sacramento, CA in 2006. Over 18 years they have enjoyed countless conversations, memories, and beer. Let&apos;s be honest, a LOT of beer.",
+    },
+];
 
 const BridalParty = () => {
     return (
@@ -12,87 +35,16 @@ const BridalParty = () => {
                 <h4 className="mb-1">Bridal Party</h4>
             </div>
             <div className="w-full flex flex-wrap justify-center pb-10">
-                <div className="w-full md:w-1/2 px-4">
-                    <div className="flex flex-col items-center py-14 sm:px-8 lg:p-20 text-center">
-                        <Image
-                            src={MaddyPic}
-                            alt="maid_of_honor"
-                            className="w-48 h-48 rounded-full mb-8"
-                        />
-                        <h3 className="text-xl-wel font-normalBold mb-4 text-gray-800">
-                            Madelyn Hayes
-                        </h3>
-                        <div className="mb-4">
-                            <TextWithLine>Maid of Honor</TextWithLine>
-                        </div>
-                        <p className="text-gray-500 font-normal leading-6">
-                            Brittany and Maddy met in Sacramento, CA in 2017.
-                            From friends, to roommates, to best friends, and
-                            beyond – Maddy and Brittany are practically sisters.
-                            They may live in different states now, but that
-                            doesn&apos;t stop them from getting together as much
-                            as humanly possible, usually over a game of pool and
-                            a few hazy IPAs.
-                        </p>
-                    </div>
-                </div>
-
-                <div className="w-full md:w-1/2 px-4">
-                    <div className="flex flex-col h-full items-center py-14 sm:px-8 lg:p-20 text-center justify-between">
-                        <div className="flex flex-col items-center">
-                            <Image
-                                src={Laynnae}
-                                alt="matron_of_honor"
-                                className="w-48 h-48 rounded-full mb-8"
-                            />
-                            <h3 className="text-xl-wel font-normalBold mb-4 text-gray-800">
-                                Lynnae Petricevic
-                            </h3>
-                        </div>
-                        <div className="flex flex-col items-center">
-                            <div className="mb-4">
-                                <TextWithLine>Matron of Honor</TextWithLine>
-                            </div>
-                            <p className="text-gray-500 font-normal leading-6">
-                                Brittany and Lynnae met in Sacramento, CA in
-                                2014. Lynnae was Brittany&apos;s first friend in
-                                California, a longtime career mentor, next-door
-                                neighbor of over 7 years, and a part of the
-                                family forever. Lynnae is a founding member of
-                                the Finer Things Club™ alongside her husband,
-                                Pero, and Brittany. Whether it&apos;s in the US
-                                or abroad, you&apos;re bound to see the two of
-                                them together.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="w-full md:w-1/2 px-4">
-                    <div className="flex flex-col h-full items-center py-14 sm:px-8 lg:p-20 text-center justify-between">
-                        <div className="flex flex-col items-center">
-                            <Image
-                                src={DimaPic}
-                                alt="best_man"
-                                className="w-48 h-48 rounded-full mb-8"
-                            />
-                            <h3 className="text-xl-wel font-normalBold mb-4 text-gray-800">
-                                Dmitriy Gumenyuk
-                            </h3>
-                        </div>
-                        <div className="flex flex-col items-center">
-                            <div className="mb-4">
-                                <TextWithLine>Best Man</TextWithLine>
-                            </div>
-                            <p className="text-gray-500 font-normal leading-6">
-                                Reid and Dima met at Mira Loma High School in
-                                Sacramento, CA in 2006. Over 18 years they have
-                                enjoyed countless conversations, memories, and
-                                beer. Let&apos;s be honest, a LOT of beer.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                {people.map((person, idx) => (
+                    <Profile
+                        pic={person.pic}
+                        altVal={person.altVal}
+                        name={person.name}
+                        role={person.role}
+                        desc={person.desc}
+                        key={idx}
+                    />
+                ))}
             </div>
             <div className="max-w-3xl mx-auto text-center">
                 <div className="grid grid-cols-1 gap-4 text-center text-2xl px-4 py-8 md:px-0 md:text-3xl font-black">

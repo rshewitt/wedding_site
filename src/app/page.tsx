@@ -11,7 +11,7 @@ import RegistryModal from "./components/RegistryModal";
 import BrideAndGroom from "./components/BrideAndGroom";
 import BridalParty from "./components/BridalParty";
 import Countdown from "./components/Countdown";
-import Agendas from "./components/Agendas";
+import Agenda from "./components/Agenda";
 import LocationMap from "./components/LocationMap";
 import Lodging from "./components/Lodging";
 import ThingsToDo from "./components/ThingsToDo";
@@ -49,7 +49,7 @@ export default function Index() {
             </SectionWrapper>
 
             <SectionWrapper className="mb-12">
-                <Agendas />
+                <Agenda />
             </SectionWrapper>
 
             <SectionWrapper className="bg-[#EFEFEF] mb-12">

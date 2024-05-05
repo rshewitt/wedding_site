@@ -22,7 +22,7 @@ jobs:
             start: npm run dev
             wait-on: "http://localhost:3000"
     deploy:
-        runs-on: ubuntu:latest
+        runs-on: ubuntu-latest
         needs: test
         steps:
             - name: Checkout

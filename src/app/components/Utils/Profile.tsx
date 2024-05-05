@@ -8,12 +8,32 @@ interface ProfileProps {
     name?: string;
     role?: string;
     desc?: string;
-    idx?: number;
+    key?: number;
 }
 
-const Person = ({ pic, altVal, name, role, desc, idx }: ProfileProps) => {
+interface ProfileMinorProps {
+    name?: string;
+    role?: string;
+    key?: number;
+}
+
+export const ProfileMinor = ({ name, role, key }: ProfileMinorProps) => {
     return (
-        <div className="w-full md:w-1/2 px-4" key={idx}>
+        <div
+            key={key}
+            className="col-span-1 text-center md:text-center text-xl-wel font-normalBold text-gray-800"
+        >
+            {name}
+            <div className="mb-4">
+                <TextWithLine>{role}</TextWithLine>
+            </div>
+        </div>
+    );
+};
+
+const Profile = ({ pic, altVal, name, role, desc, key }: ProfileProps) => {
+    return (
+        <div className="w-full md:w-1/2 px-4" key={key}>
             <div className="flex flex-col items-center py-14 sm:px-8 lg:p-20 text-center">
                 <Image
                     src={pic!}
@@ -32,4 +52,4 @@ const Person = ({ pic, altVal, name, role, desc, idx }: ProfileProps) => {
     );
 };
 
-export default Person;
+export default Profile;

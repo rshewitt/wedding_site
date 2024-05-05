@@ -1,4 +1,3 @@
-// import TextWithLine from "./Utils/TextWithLine";
 import bride from "../images/bride.jpg";
 import groom from "../images/groom.jpg";
 import Profile from "./Utils/Profile";

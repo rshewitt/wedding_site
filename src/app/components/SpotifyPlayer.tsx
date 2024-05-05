@@ -16,7 +16,7 @@ const SpotifyPlaylist = () => {
             <div className="text-xl-wel font-normalBold text-gray-800 text-center mb-10 px-4">
                 <a
                     // TODO: update this link
-                    href="https://open.spotify.com/playlist/1accWGTIiTGHdkpJhei0Ff?si=uHRxgcTkQC6ShCEox4ewOg&pt=12afd4560a6b1715fcf57ba7ab4780e9&pi=u-kTdBwbCRRl-s"
+                    href="https://open.spotify.com/playlist/62kuDwfMjJQTA6Y1bWAmmW?si=1DSO1-m1SCCRnS1TWdk8uA&pt=51ac97ef0ed32c521f458b1b7365400e&pi=u-8LrVHHMTRUmW"
                     target="_blank"
                     rel="noreferrer"
                 >

@@ -1,6 +1,7 @@
 name: Test and Deploy
 
 on:
+    workflow_dispatch:
     pull_request:
       branches: [ main ]
     push:
@@ -42,3 +43,11 @@ jobs:
                 aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
                 aws-region: us-east-2
             - run: aws s3 sync ./out s3://mchewittwedding.com
+            - name: Invalidate Cloudfront
+              uses: chetan/invalidate-cloudfront-action@v2.4
+              env:
+                DISTRIBUTION: E1OUB9BRZ80YGI
+                PATHS: /*
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+                AWS_REGION: us-east-2

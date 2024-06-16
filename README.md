@@ -43,12 +43,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     - https://favicon.io/favicon-generator/
     
 ## TODO
-- Deployment
-    - setup ci action to run e2e tests, build/export, upload to s3
+- Deployment 
 - Immediate fixes
     - double-click is needed to open the welcome letter ( sometimes ) 
 - Features
-    - e2e tests (cypress)
+    - add information icon to form post to inform users of where the data is going
+    - e2e tests (improve)
 - Text Content
     - our story 
     - do we still need "additional festivities to be announced?" 

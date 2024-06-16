@@ -28,7 +28,7 @@ const Message = () => {
     return (
         <div id="rsvp_div" className="py-14">
             <h4 className="text-3xl-wel lg:text-5xl-wel font-squiggly text-center mb-10 md:mb-16 text-gray-700 px-4">
-                RVSP
+                RSVP
             </h4>
             <div className="flex justify-center px-4">
                 <LoadingOverlay

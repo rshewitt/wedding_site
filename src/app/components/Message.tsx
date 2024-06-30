@@ -43,7 +43,7 @@ const Message = () => {
                 }}
               >
                 <fieldset disabled={loading}>
-                  <p className="text-xl-wel font-normalBold text-black text-center mb-6">
+                  <p className="text-xl-wel font-normalBold text-black text-center mb-6 mx-3">
                     What events are you planning to attend?
                   </p>
                   <div className="mb-3">

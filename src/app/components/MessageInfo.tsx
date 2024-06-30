@@ -14,10 +14,10 @@ const MessageInformationIcon = () => {
       <AiFillInfoCircle
         style={{
           position: "absolute",
-          top: "20px",
-          right: "20px",
+          top: "10px",
+          right: "10px",
         }}
-        size="40px"
+        size="30px"
         color="#354834"
         onClick={handleClick}
       />

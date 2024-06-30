@@ -30,7 +30,7 @@ const MessageInformationIcon = () => {
         blockScroll={false}
         center
       >
-        <h4 className="text-3xl-wel lg:text-3xl-wel font-squiggly text-center font-head mb-6 text-black">
+        <h4 className="text-2xl-wel lg:text-2xl-wel font-squiggly text-center font-head mb-6 text-black">
           Message Information
         </h4>
         <div className="font-normal text-center text-black mb-6">

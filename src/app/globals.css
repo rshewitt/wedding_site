@@ -31,3 +31,19 @@ body {
     text-wrap: balance;
   }
 }
+
+.react-datepicker-wrapper {
+  margin-bottom: 2%;
+}
+
+
+.react-datepicker__view-calendar-icon input {
+  color: black;
+  border-radius: 0.25rem;
+  border-color: #6b7280;
+  text-align: center;
+}
+
+.react-datepicker__calendar-icon {
+  filter: invert(19%) sepia(11%) saturate(1534%) hue-rotate(69deg) brightness(97%) contrast(77%);
+}

@@ -1,11 +1,16 @@
-import { memo, useRef, useState } from "react";
+import { memo, useRef, useState, useEffect } from "react";
 import LoadingOverlay from "react-loading-overlay-ts";
 import MessageInformationIcon from "./MessageInfo";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 const Message = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const [commentSubmitted, setCommentSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+
+  const [startDate, setStartDate] = useState<Date | null>();
+  const [endDate, setEndDate] = useState<Date | null>();
 
   const scriptUrl =
     "https://script.google.com/macros/s/AKfycbyrSwUKoDYzFOHqPmMulr_Ij6AD53-N2QAZDdik2S9gQwq4sB6d_BnFyKJJl3CLMj7g/exec";
@@ -62,7 +67,7 @@ const Message = () => {
                     </label>
                     <br />
                   </div>
-                  <div className="mb-3">
+                  <div className="mb-6">
                     <input
                       type="checkbox"
                       className="h-8 w-8 rounded-full border-black text-[#354834]"
@@ -78,21 +83,31 @@ const Message = () => {
                     </label>
                     <br />
                   </div>
-                  <input
-                    type="checkbox"
-                    className="h-8 w-8 rounded-full border-black text-[#354834]"
-                    name="farewell_event"
-                    value="Y"
-                  />
-                  <label
-                    htmlFor="event2"
-                    className="text-md-twl font-normalBold text-black px-5"
-                  >
-                    {" "}
-                    Farewell Brunch: Sun 3/9
-                  </label>
-                  <br />
-                  <br />
+                  <div className="mb-6" style={{ textAlign: "center" }}>
+                    <p className="text-xl-wel font-normalBold text-black text-center mb-6 mx-3">
+                      What are your arrival and departure dates?
+                    </p>
+                    <p className="text-md-twl font-normalBold text-black px-5 mb-2">
+                      Arrival
+                    </p>
+                    <DatePicker
+                      name="arrival"
+                      showIcon
+                      selected={startDate}
+                      onChange={(date) => setStartDate(date)}
+                    />
+                    <br />
+                    <p className="text-md-twl font-normalBold text-black px-5 mb-2">
+                      Departure
+                    </p>
+                    <DatePicker
+                      name="departure"
+                      showIcon
+                      selected={endDate}
+                      onChange={(date) => setEndDate(date)}
+                    />
+                    <br />
+                  </div>
                   <input
                     className="w-full bg-[#f8fafc] text-md-twl font-normalBold text-black rounded border px-3 py-1.5 mb-6"
                     placeholder="First Name"
@@ -125,6 +140,12 @@ const Message = () => {
                     className="w-full bg-[#f8fafc] text-md-twl font-normalBold text-black rounded border px-3 py-1.5 mb-6"
                     placeholder="Message"
                     name="message"
+                    maxLength={750}
+                  />
+                  <textarea
+                    className="w-full bg-[#f8fafc] text-md-twl font-normalBold text-black rounded border px-3 py-1.5 mb-6"
+                    placeholder="If you have any food allergies write them here"
+                    name="food_allergies"
                     maxLength={750}
                   />
                   <div className="flex justify-end">

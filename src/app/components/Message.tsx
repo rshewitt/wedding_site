@@ -1,4 +1,4 @@
-import { memo, useRef, useState, useEffect } from "react";
+import { memo, useRef, useState } from "react";
 import LoadingOverlay from "react-loading-overlay-ts";
 import MessageInformationIcon from "./MessageInfo";
 import DatePicker from "react-datepicker";
@@ -48,41 +48,6 @@ const Message = () => {
                 }}
               >
                 <fieldset disabled={loading}>
-                  <p className="text-xl-wel font-normalBold text-black text-center mb-6 mx-3">
-                    What events are you planning to attend?
-                  </p>
-                  <div className="mb-3">
-                    <input
-                      type="checkbox"
-                      className="h-8 w-8 rounded-full border-black text-[#354834]"
-                      name="mardi_gras_event"
-                      value="Y"
-                    />
-                    <label
-                      htmlFor="event3"
-                      className="text-md-twl font-normalBold text-black px-5"
-                    >
-                      {" "}
-                      Mardi Gras: Fri 2/28 - Tues 3/4
-                    </label>
-                    <br />
-                  </div>
-                  <div className="mb-6">
-                    <input
-                      type="checkbox"
-                      className="h-8 w-8 rounded-full border-black text-[#354834]"
-                      name="ceremony_event"
-                      value="Y"
-                    />
-                    <label
-                      htmlFor="event4"
-                      className="text-md-twl font-normalBold text-black px-5"
-                    >
-                      {" "}
-                      Ceremony & Reception: Sat 3/8
-                    </label>
-                    <br />
-                  </div>
                   <div className="mb-6" style={{ textAlign: "center" }}>
                     <p className="text-xl-wel font-normalBold text-black text-center mb-6 mx-3">
                       What are your arrival and departure dates?

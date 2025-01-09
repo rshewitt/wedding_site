@@ -47,3 +47,16 @@ body {
 .react-datepicker__calendar-icon {
   filter: invert(19%) sepia(11%) saturate(1534%) hue-rotate(69deg) brightness(97%) contrast(77%);
 }
+
+.customModal {
+  background: #b2dbbf;
+  /* max-width: 500px; */
+  width: 80%;
+  height: 70%;
+  border-radius: 10px;
+}
+
+.szh-accordion button {
+  background-color: #354834;
+  border-radius: 15px;
+}

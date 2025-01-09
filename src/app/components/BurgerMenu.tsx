@@ -95,6 +95,10 @@ const BurgerMenu = () => {
       name: "Things To Do",
     },
     {
+      div_id: "timeline_div",
+      name: "Timeline",
+    },
+    {
       div_id: "carousel_div",
       name: "Gallery",
     },
@@ -111,7 +115,7 @@ const BurgerMenu = () => {
   return (
     <div
       className="fixed top-0 left-0 mx-3 rounded-lg"
-      style={{ marginTop: "10px", zIndex: "5" }}
+      style={{ marginTop: "10px", zIndex: "9" }}
     >
       <Menu
         isOpen={isOpen}

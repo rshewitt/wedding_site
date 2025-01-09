@@ -14,38 +14,38 @@ import photo11 from "../images/IMG_5773.jpg";
 import photo12 from "../images/IMG_5776.jpg";
 
 const photos = [
-    photo1,
-    photo2,
-    photo3,
-    photo4,
-    photo5,
-    photo6,
-    photo8,
-    photo10,
-    photo11,
-    photo12,
+  photo1,
+  photo2,
+  photo3,
+  photo4,
+  photo5,
+  photo6,
+  photo8,
+  photo10,
+  photo11,
+  photo12,
 ];
 
 const GalleryCarousel = () => {
-    return (
-        <div id="carousel_div" className="w-full px-1 md:px-4">
-            <h4 className="text-3xl-wel lg:text-5xl-wel font-squiggly text-center mb-14 pt-10 text-gray-700">
-                Gallery
-            </h4>
-            <Carousel showThumbs={false}>
-                {photos.map((photo, index) => (
-                    <div key={`${index}`}>
-                        <Image
-                            src={photo}
-                            alt={`${index}`}
-                            loading="lazy"
-                            placeholder="blur"
-                        />
-                    </div>
-                ))}
-            </Carousel>
-        </div>
-    );
+  return (
+    <div id="carousel_div" className="w-full px-1 md:px-4 pb-10">
+      <h4 className="text-3xl-wel lg:text-5xl-wel font-squiggly text-center mb-14 pt-10 text-gray-700">
+        Gallery
+      </h4>
+      <Carousel showThumbs={false}>
+        {photos.map((photo, index) => (
+          <div key={`${index}`}>
+            <Image
+              src={photo}
+              alt={`${index}`}
+              loading="lazy"
+              placeholder="blur"
+            />
+          </div>
+        ))}
+      </Carousel>
+    </div>
+  );
 };
 
 export default GalleryCarousel;

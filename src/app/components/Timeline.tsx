@@ -93,13 +93,13 @@ const Timeline = () => {
             key={idx}
             visible
           >
-            <h3 className="text-gray-400 bg-white text-2xl rounded-lg font-normalBold mb-4">
+            <h3 className="text-white bg-[#0f2e31] text-2xl rounded-lg font-normalBold mb-4">
               {timelineEvent.topic}
             </h3>
             {timelineEvent.times.map((time, idxTime) => (
               <div key={idxTime}>
                 <h3
-                  className="vertical-timeline-element-title text-black"
+                  className="vertical-timeline-element-title text-[#de9931]"
                   style={idxTime > 0 ? { marginTop: "20px" } : {}}
                 >
                   {time.time}

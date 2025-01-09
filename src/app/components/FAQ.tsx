@@ -128,7 +128,7 @@ const FAQ = () => {
           zIndex: "9",
         }}
         size="45px"
-        color="#354834"
+        color="#8d4426"
         onClick={handleClick}
       />
       <Modal

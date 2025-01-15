@@ -74,8 +74,8 @@ const timelineEvents = [
 const Timeline = () => {
   return (
     <div id="timeline_div" className="max-w-3xl mx-auto text-center">
-      <div className="text-3xl-wel lg:text-5xl-wel font-squiggly text-center mb-10 pt-10 text-gray-700 px-2">
-        <h4>Timeline</h4>
+      <div className="text-3xl-wel lg:text-5xl-wel font-squiggly text-center text-gray-700 px-2">
+        <h4>Let&apos;s Do This</h4>
       </div>
       <div className="col-span-1 text-gray-400 text-left text-xl-wel font-normalBold pb-4 text-center">
         <h4>Saturday March 8 2025</h4>

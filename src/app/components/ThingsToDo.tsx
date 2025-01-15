@@ -36,7 +36,7 @@ const Activities = [
 const ThingsToDo = () => {
   return (
     <div id="ttd_dev" className="max-w-3xl mx-auto text-center">
-      <div className="text-3xl-wel lg:text-5xl-wel font-squiggly text-center mb-10 pt-10 text-gray-700 px-2">
+      <div className="text-3xl-wel lg:text-5xl-wel font-squiggly text-center text-gray-700 px-2">
         <h4 className="mb-1">Things To Do</h4>
       </div>
 

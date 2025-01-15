@@ -32,8 +32,8 @@ const Message = () => {
 
   // TODO: update the events to a loop create
   return (
-    <div id="rsvp_div" className="py-14">
-      <h4 className="text-3xl-wel lg:text-5xl-wel font-squiggly text-center mb-10 md:mb-16 text-gray-700 px-4">
+    <div id="rsvp_div">
+      <h4 className="text-3xl-wel lg:text-5xl-wel font-squiggly text-center text-gray-700 px-4">
         RSVP
       </h4>
       <div className="flex justify-center px-4">
@@ -49,6 +49,9 @@ const Message = () => {
               >
                 <fieldset disabled={loading}>
                   <div className="mb-6" style={{ textAlign: "center" }}>
+                    <p className="text-fcxl-wel font-normalBold text-black text-center mb-6 mx-3">
+                      We can&apos;t wait to celebrate with you!
+                    </p>
                     <p className="text-xl-wel font-normalBold text-black text-center mb-6 mx-3">
                       What are your arrival and departure dates?
                     </p>

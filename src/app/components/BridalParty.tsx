@@ -51,11 +51,11 @@ const peopleMinorGroom = [
 
 const BridalParty = () => {
   return (
-    <div id="bridal_party_div" className="pt-10 pb-4">
-      <div className="text-3xl-wel lg:text-5xl-wel font-squiggly text-center pt-10 text-gray-700 px-2">
-        <h4 className="mb-1">Bridal Party</h4>
+    <div id="bridal_party_div">
+      <div className="text-3xl-wel lg:text-5xl-wel font-squiggly text-center text-gray-700 px-2">
+        <h4>Bridal Party</h4>
       </div>
-      <div className="w-full flex flex-wrap justify-center pb-10">
+      <div className="w-full flex flex-wrap justify-center">
         {peopleMain.map((person, idx) => (
           <Profile
             pic={person.pic}
@@ -68,13 +68,13 @@ const BridalParty = () => {
         ))}
       </div>
       <div className="max-w-3xl mx-auto text-center">
-        <div className="grid grid-cols-1 gap-4 text-center text-2xl px-4 py-8 md:px-0 md:text-3xl font-black">
+        <div className="grid grid-cols-1 gap-4 text-center text-2xl px-4 md:px-0 md:text-3xl font-black">
           {peopleMinorBride.map((person, idx) => (
             <ProfileMinor name={person.name} role={person.role} key={idx} />
           ))}
         </div>
         <div className="text-xl text-black">~ ~</div>
-        <div className="grid grid-cols-1 gap-4 text-center text-2xl px-4 py-8 md:py-10 md:px-0 md:text-3xl font-black">
+        <div className="grid grid-cols-1 gap-4 text-center text-2xl px-4 md:px-0 md:text-3xl font-black">
           {peopleMinorGroom.map((person, idx) => (
             <ProfileMinor name={person.name} role={person.role} key={idx} />
           ))}

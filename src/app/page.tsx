@@ -14,7 +14,6 @@ import BridalParty from "./components/BridalParty";
 import Countdown from "./components/Countdown";
 import Agenda from "./components/Agenda";
 import LocationMap from "./components/LocationMap";
-import Lodging from "./components/Lodging";
 import ThingsToDo from "./components/ThingsToDo";
 import Timeline from "./components/Timeline";
 import Message from "./components/Message";
@@ -43,60 +42,51 @@ export default function Index() {
       <WelcomeModal isOpen={openWelcome} onClose={onCloseWelcomeModal} />
 
       <Home />
-
       <BurgerMenu />
-
       <FAQ />
 
-      <SectionWrapper className="bg-[#EFEFEF] mb-12">
+      <SectionWrapper className="bg-[#EFEFEF]">
         <BrideAndGroom />
       </SectionWrapper>
 
-      <SectionWrapper className="mb-12">
+      <SectionWrapper>
         <Agenda />
       </SectionWrapper>
 
-      <SectionWrapper className="bg-[#EFEFEF] mb-12">
+      <SectionWrapper className="bg-[#EFEFEF]">
         <BridalParty />
       </SectionWrapper>
 
-      <SectionWrapper className="mb-12">
+      <SectionWrapper>
         <LocationMap />
       </SectionWrapper>
 
-      <SectionWrapper className="bg-[#EFEFEF] mb-12">
-        <Lodging />
-      </SectionWrapper>
-
-      <SectionWrapper className="mb-12">
+      <SectionWrapper className="bg-[#EFEFEF]">
         <ThingsToDo />
       </SectionWrapper>
 
-      <SectionWrapper className="mb-12 bg-[#EFEFEF]">
+      <SectionWrapper>
         <Timeline />
       </SectionWrapper>
 
-      <SectionWrapper className="mb-12 pt-12">
+      <SectionWrapper className="bg-[#EFEFEF]">
         <Countdown />
       </SectionWrapper>
 
-      <SectionWrapper className="mb-12 bg-[#EFEFEF]">
+      <SectionWrapper>
         <GalleryCarousel />
       </SectionWrapper>
 
-      <SectionWrapper className="mb-12">
+      <SectionWrapper className="bg-[#EFEFEF]">
         <SpotifyPlaylist />
       </SectionWrapper>
 
-      <SectionWrapper className="mb-12 bg-[#EFEFEF]">
+      <SectionWrapper>
         <Message />
       </SectionWrapper>
 
       <Credit />
-
-      <SectionWrapper className="mb-12 bg-[#EFEFEF]">
-        <RegistryModal />
-      </SectionWrapper>
+      <RegistryModal />
     </div>
   );
 }

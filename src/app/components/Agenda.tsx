@@ -11,7 +11,7 @@ const AgendaItem = ({ title, date, idx }: AgendaProps) => {
   return (
     <div
       key={idx}
-      className="grid grid-cols-2 gap-4 text-center text-2xl px-4 py-4 md:py-16 md:px-0"
+      className="grid grid-cols-2 gap-4 text-center text-2xl px-4 py-4 md:px-0"
     >
       <div className="col-span-1 text-gray-400 text-left text-xl-wel font-normalBold">
         {title}
@@ -42,7 +42,7 @@ const Agenda = () => {
       <h3 className="font-normalBold font-black mb-6 text-center text-gray-700">
         March 8, 2025
       </h3>
-      <div className="px-12 flex max-w-md mx-auto mb-10">
+      <div className="px-12 flex max-w-md mx-auto">
         <a
           href={CALENDAR_URL}
           target={"_blank"}
@@ -53,8 +53,8 @@ const Agenda = () => {
         </a>
       </div>
 
-      <div className="text-3xl-wel lg:text-5xl-wel font-squiggly text-center mb-10 pt-10 text-gray-700 px-2">
-        <h4 className="mb-1">Festivities</h4>
+      <div className="text-3xl-wel lg:text-5xl-wel font-squiggly text-center pt-10 text-gray-700 px-2">
+        <h4>Festivities</h4>
       </div>
 
       {agendaItems.map((item, idx) => (

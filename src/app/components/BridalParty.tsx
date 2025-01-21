@@ -73,7 +73,7 @@ const BridalParty = () => {
             <ProfileMinor name={person.name} role={person.role} key={idx} />
           ))}
         </div>
-        <div className="text-xl text-black">~ ~</div>
+        <div className="text-xl text-black mb-4">~ ~</div>
         <div className="grid grid-cols-1 gap-4 text-center text-2xl px-4 md:px-0 md:text-3xl font-black">
           {peopleMinorGroom.map((person, idx) => (
             <ProfileMinor name={person.name} role={person.role} key={idx} />
